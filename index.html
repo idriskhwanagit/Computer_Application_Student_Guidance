@@ -1,0 +1,1569 @@
+<!DOCTYPE html>
+<html lang="ckb">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Computer Application</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&family=Noto+Naskh+Arabic:wght@400;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* ---------------------------------------------------------------------------
+   Computer Application — a bilingual classroom manual, after the MIS guide.
+   Palette: cool paper + deep teal ink, an amber reserved for warnings only,
+            and the red of the numbers on the screenshots.
+   Type:    Vazirmatn carries both scripts in headings and UI;
+            reading text switches face with the script (Naskh / Source Serif).
+   --------------------------------------------------------------------------- */
+
+:root {
+  --paper:      #f7f9fb;
+  --surface:    #ffffff;
+  --surface-2:  #eef2f6;
+  --ink:        #16202b;
+  --ink-soft:   #4a5a6b;
+  --ink-faint:  #7d8b99;
+  --rule:       #dde5ec;
+  --accent:     #0d6e6e;
+  --accent-ink: #0a5757;
+  --accent-wash:#e2f1f0;
+  --warn:       #9c5410;
+  --warn-wash:  #fbf1e3;
+  --good:       #1d7a4c;
+  --good-wash:  #e3f4ea;
+  --mark:       #e5322d;   /* the numbers on the screenshots */
+  --code-bg:    #12303a;
+  --code-ink:   #dbe9ee;
+  --shadow:     0 1px 2px rgba(18, 40, 56, .06), 0 8px 24px -16px rgba(18, 40, 56, .35);
+
+  --wm-alpha:   .035;
+  --rail-w:     16.5rem;
+  --measure:    72ch;
+
+  --f-ui:   "Vazirmatn", "Segoe UI", Tahoma, sans-serif;
+  --f-ar:   "Noto Naskh Arabic", "Segoe UI", Tahoma, serif;
+  --f-la:   "Source Serif 4", Georgia, "Times New Roman", serif;
+  --f-mono: "JetBrains Mono", Consolas, "Courier New", monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper:      #0e141a;
+    --surface:    #151d25;
+    --surface-2:  #1c262f;
+    --ink:        #e4ecf2;
+    --ink-soft:   #a6b4c1;
+    --ink-faint:  #7d8b99;
+    --rule:       #25313c;
+    --accent:     #56c4bd;
+    --accent-ink: #7ad6cf;
+    --accent-wash:#122e30;
+    --warn:       #e0a464;
+    --warn-wash:  #2c2317;
+    --good:       #6fd3a0;
+    --good-wash:  #13291e;
+    --code-bg:    #0a1a20;
+    --code-ink:   #cfe2e8;
+    --shadow:     0 1px 2px rgba(0, 0, 0, .4), 0 8px 24px -16px rgba(0, 0, 0, .8);
+    --wm-alpha:   .055;
+  }
+}
+
+:root[data-theme="dark"] {
+  --paper:      #0e141a;
+  --surface:    #151d25;
+  --surface-2:  #1c262f;
+  --ink:        #e4ecf2;
+  --ink-soft:   #a6b4c1;
+  --ink-faint:  #7d8b99;
+  --rule:       #25313c;
+  --accent:     #56c4bd;
+  --accent-ink: #7ad6cf;
+  --accent-wash:#122e30;
+  --warn:       #e0a464;
+  --warn-wash:  #2c2317;
+  --good:       #6fd3a0;
+  --good-wash:  #13291e;
+  --code-bg:    #0a1a20;
+  --code-ink:   #cfe2e8;
+  --shadow:     0 1px 2px rgba(0, 0, 0, .4), 0 8px 24px -16px rgba(0, 0, 0, .8);
+  --wm-alpha:   .055;
+}
+
+* { box-sizing: border-box; }
+
+/* an element carrying [hidden] must stay hidden even when a rule below
+   gives it a display of its own */
+[hidden] { display: none !important; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--f-ui);
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* --- top bar ------------------------------------------------------------- */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .6rem 1.1rem;
+  padding: .7rem 1.25rem;
+  background: color-mix(in srgb, var(--surface) 88%, transparent);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--rule);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin-inline-end: auto;
+  font-weight: 700;
+  letter-spacing: -.01em;
+}
+
+.brand svg { flex: none; color: var(--accent); }
+.brand b { font-size: 1rem; }
+
+/* --- segmented switches -------------------------------------------------- */
+.switch { display: flex; align-items: center; gap: .5rem; }
+
+.switch > .lbl {
+  font-size: .7rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.seg {
+  display: inline-flex;
+  padding: 2px;
+  background: var(--surface-2);
+  border-radius: 8px;
+}
+
+.seg button {
+  padding: .35rem .8rem;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--ink-soft);
+  font-family: inherit;
+  font-size: .85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background .15s, color .15s;
+}
+
+.seg button:hover { color: var(--ink); }
+
+.seg button[aria-pressed="true"] {
+  background: var(--surface);
+  color: var(--accent-ink);
+  font-weight: 700;
+  box-shadow: var(--shadow);
+}
+
+.icon-btn {
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink-soft);
+  font-size: .95rem;
+  cursor: pointer;
+}
+
+.icon-btn:hover { color: var(--accent-ink); border-color: var(--accent); }
+
+:where(button, a, input):focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* --- jumping between lessons on a phone ----------------------------------
+   The rail is no use on a narrow screen. A native picker of the lessons is
+   one tap instead.
+   ------------------------------------------------------------------------ */
+.jump {
+  display: none;
+  flex: 1 1 12rem;
+  min-width: 12rem;
+  max-width: 28rem;
+  padding: .4rem .6rem;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  font-family: var(--f-ui);
+  font-size: .85rem;
+}
+
+/* --- the two documents --------------------------------------------------- */
+.tabs-doc {
+  display: inline-flex;
+  gap: .25rem;
+  padding: .2rem;
+  background: var(--surface-2);
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+}
+.tabs-doc button {
+  padding: .3rem .75rem;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink-soft);
+  font: inherit;
+  font-size: .85rem;
+  cursor: pointer;
+}
+.tabs-doc button.on {
+  background: var(--surface);
+  color: var(--accent);
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(16, 32, 43, .1);
+}
+
+/* --- shell --------------------------------------------------------------- */
+.shell {
+  display: grid;
+  grid-template-columns: var(--rail-w) minmax(0, 1fr);
+  align-items: start;
+  column-gap: 2.5rem;
+  row-gap: .6rem;
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: 1.1rem 1.5rem 5rem;
+}
+
+/* --- watermark: faint, repeated, behind everything ----------------------- */
+.watermark {
+  position: fixed;
+  inset: -30%;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.6rem;
+  overflow: hidden;
+  transform: rotate(-24deg);
+  opacity: var(--wm-alpha);
+  color: var(--ink);
+  font-family: var(--f-ui);
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: .05em;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.watermark span { display: block; text-align: center; }
+
+/* --- notice -------------------------------------------------------------- */
+.notice {
+  min-width: 0;
+  grid-column: 2;
+  max-width: var(--measure);
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .4rem .8rem;
+  border: 1px solid color-mix(in srgb, var(--warn) 45%, transparent);
+  border-inline-start: 3px solid var(--warn);
+  border-radius: 8px;
+  background: var(--warn-wash);
+  color: var(--warn);
+  font-size: .82rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.notice .mark { flex: none; font-size: .95rem; line-height: 1.4; }
+
+/* --- rail ---------------------------------------------------------------- */
+.rail {
+  position: sticky;
+  top: 4.5rem;
+  align-self: start;
+  height: fit-content;
+  max-height: calc(100vh - 7rem);
+  overflow-y: auto;
+  padding-inline-end: .5rem;
+}
+
+.rail h2 {
+  margin: 0 0 .75rem;
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.toc { display: flex; flex-direction: column; gap: .1rem; }
+
+.toc a {
+  display: block;
+  padding: .3rem .55rem;
+  border-inline-start: 2px solid transparent;
+  border-radius: 0 5px 5px 0;
+  color: var(--ink-soft);
+  font-size: .85rem;
+  line-height: 1.45;
+  text-decoration: none;
+}
+[dir="rtl"] .toc a { border-radius: 5px 0 0 5px; }
+
+.toc a:hover { background: var(--surface-2); color: var(--ink); }
+.toc a.lvl-1 { font-weight: 700; color: var(--ink); margin-top: .55rem; }
+.toc a.lvl-2 { padding-inline-start: 1.1rem; }
+.toc a.lvl-3 { padding-inline-start: 1.9rem; font-size: .8rem; color: var(--ink-faint); }
+
+.toc a.here {
+  border-inline-start-color: var(--accent);
+  background: var(--accent-wash);
+  color: var(--accent-ink);
+}
+
+/* --- reader -------------------------------------------------------------- */
+/* width: 100% keeps the reader inside its column on a phone: centred with
+   auto margins alone, it grows to fit its widest table and runs off the
+   screen. A table scrolls inside its own box instead. */
+.reader {
+  min-width: 0;
+  width: 100%;
+  max-width: var(--measure);
+  margin-inline: auto;
+  padding: 2.25rem 2.5rem 3rem;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+[dir="rtl"] .reader { font-family: var(--f-ar); line-height: 1.95; }
+[dir="ltr"] .reader { font-family: var(--f-la); line-height: 1.7; }
+
+.reader h1, .reader h2, .reader h3 {
+  font-family: var(--f-ui);
+  text-wrap: balance;
+  scroll-margin-top: 5rem;
+}
+
+/* a lesson opens with its own banner */
+.reader h1 {
+  margin: 3rem 0 1.2rem;
+  padding-bottom: .6rem;
+  border-bottom: 2px solid var(--accent);
+  color: var(--accent-ink);
+  font-size: 1.45rem;
+  line-height: 1.45;
+  letter-spacing: -.01em;
+}
+.reader > h1:first-child { margin-top: 0; font-size: 1.2rem; color: var(--ink); }
+
+.reader h2 {
+  margin: 2.25rem 0 .75rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: var(--accent-ink);
+}
+
+.reader h3 { margin: 1.75rem 0 .5rem; font-size: 1rem; color: var(--ink); }
+
+.reader p { margin: 0 0 1rem; }
+.reader ul, .reader ol { margin: 0 0 1rem; padding-inline-start: 1.5rem; }
+.reader li { margin-bottom: .4rem; }
+.reader a { color: var(--accent-ink); text-underline-offset: .18em; }
+
+.reader hr { margin: 2.5rem 0; border: 0; border-top: 1px solid var(--rule); }
+
+/* A Latin name is its own island: isolate, not embed, so a comma or a
+   bracket beside it lands on the right side of it in a Kurdish line. */
+.reader code {
+  padding: .12em .38em;
+  border-radius: 4px;
+  background: var(--surface-2);
+  color: var(--accent-ink);
+  font-family: var(--f-mono);
+  font-size: .85em;
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+.reader strong, .reader b, .reader em { unicode-bidi: plaintext; }
+
+/* --- a key on the keyboard ----------------------------------------------- */
+.combo { direction: ltr; unicode-bidi: isolate; white-space: nowrap; }
+kbd {
+  display: inline-block;
+  min-width: 1.7em;
+  padding: .05em .45em;
+  border: 1px solid var(--rule);
+  border-bottom-width: 3px;
+  border-radius: 6px;
+  background: var(--surface-2);
+  color: var(--ink);
+  font-family: var(--f-ui);
+  font-size: .82em;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* --- the red numbers, the same as on the screenshots --------------------- */
+.num {
+  display: inline-grid;
+  place-items: center;
+  width: 1.55em;
+  height: 1.55em;
+  margin: 0 .1em;
+  border-radius: 50%;
+  background: var(--mark);
+  color: #fff;
+  font-family: var(--f-ui);
+  font-size: .8em;
+  font-weight: 700;
+  line-height: 1;
+  vertical-align: .1em;
+}
+
+/* --- pictures ------------------------------------------------------------ */
+.reader figure {
+  margin: 0 0 1.4rem;
+  padding: .6rem;
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  background: var(--surface-2);
+}
+.reader figure img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 6px;
+  cursor: zoom-in;
+}
+.reader figure.small img { max-height: 15rem; }
+.reader figcaption {
+  margin-top: .45rem;
+  color: var(--ink-soft);
+  font-family: var(--f-ui);
+  font-size: .82rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.zoom {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  background: rgba(8, 14, 20, .88);
+  cursor: zoom-out;
+}
+.zoom img { max-width: 100%; max-height: 100%; border-radius: 6px; background: #fff; }
+
+/* --- collapsed explanations ---------------------------------------------- */
+.explain {
+  margin: 0 0 1.25rem;
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  background: var(--surface-2);
+}
+.explain > summary {
+  padding: .7rem 1rem;
+  color: var(--accent-ink);
+  font-family: var(--f-ui);
+  font-size: .92rem;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+}
+.explain > summary::-webkit-details-marker { display: none; }
+.explain > summary::before { content: "▸"; margin-inline-end: .55rem; font-size: .85em; }
+[dir="rtl"] .explain > summary::before { content: "◂"; }
+.explain[open] > summary::before,
+[dir="rtl"] .explain[open] > summary::before { content: "▾"; }
+.explain > :not(summary) { margin-inline: 1rem; }
+.explain > :last-child { margin-bottom: 1rem; }
+
+/* --- something to type or copy exactly ----------------------------------- */
+.block { position: relative; min-width: 0; margin: 0 0 1.25rem; direction: ltr; }
+.block pre {
+  margin: 0;
+  padding: 1rem 1.15rem;
+  overflow-x: auto;
+  background: var(--code-bg);
+  border-radius: 10px;
+  color: var(--code-ink);
+  font-family: var(--f-mono);
+  font-size: .85rem;
+  line-height: 1.65;
+}
+.block pre code { padding: 0; background: none; color: inherit; font-size: inherit; }
+.copy {
+  position: absolute;
+  inset-block-start: .5rem;
+  inset-inline-end: .5rem;
+  padding: .25rem .6rem;
+  border: 1px solid rgba(255, 255, 255, .18);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, .07);
+  color: #cfe2e8;
+  font-family: var(--f-ui);
+  font-size: .72rem;
+  cursor: pointer;
+}
+.copy[data-done="1"] { color: #8fe3c8; border-color: #8fe3c8; }
+
+/* --- tables -------------------------------------------------------------- */
+.table-wrap { margin: 0 0 1.25rem; overflow-x: auto; }
+.reader table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--f-ui);
+  font-size: .88rem;
+  font-variant-numeric: tabular-nums;
+}
+.reader th, .reader td {
+  padding: .55rem .8rem;
+  border-bottom: 1px solid var(--rule);
+  text-align: start;
+  vertical-align: top;
+}
+.reader thead th {
+  border-bottom: 2px solid var(--rule);
+  color: var(--ink-faint);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  white-space: nowrap;
+}
+.reader tbody tr:last-child td { border-bottom: 0; }
+
+/* --- callouts ------------------------------------------------------------ */
+.reader blockquote {
+  margin: 0 0 1.25rem;
+  padding: .9rem 1.15rem;
+  border-inline-start: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  background: var(--accent-wash);
+  color: var(--ink-soft);
+  font-size: .95em;
+}
+[dir="rtl"] .reader blockquote { border-radius: 8px 0 0 8px; }
+.reader blockquote > :last-child { margin-bottom: 0; }
+.reader blockquote:has(h3) { border-inline-start-color: var(--warn); background: var(--warn-wash); }
+.reader blockquote h3 { margin-top: 0; color: var(--warn); font-size: .95rem; }
+
+/* --- a list to tick off -------------------------------------------------- */
+.reader ul.checks { padding-inline-start: 0; list-style: none; }
+.reader ul.checks li { margin-bottom: .35rem; }
+.reader ul.checks label {
+  display: flex;
+  align-items: flex-start;
+  gap: .6rem;
+  padding: .45rem .7rem;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.reader ul.checks input {
+  flex: none;
+  width: 1.15rem;
+  height: 1.15rem;
+  margin-top: .3em;
+  accent-color: var(--good);
+}
+.reader ul.checks li.ok label { border-color: color-mix(in srgb, var(--good) 45%, transparent); background: var(--good-wash); }
+
+/* --- practice, on the page itself ----------------------------------------
+   A first-day class cannot practise the mouse on a desktop it is afraid to
+   break, so the page gives it targets of its own, and says when each one
+   was hit.
+   ------------------------------------------------------------------------ */
+.practice {
+  margin: 0 0 1.5rem;
+  padding: 1rem;
+  border: 2px dashed color-mix(in srgb, var(--accent) 45%, transparent);
+  border-radius: 12px;
+  background: var(--surface);
+  font-family: var(--f-ui);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.p-head { display: flex; align-items: center; gap: .6rem; margin-bottom: .8rem; }
+.p-head b { color: var(--accent-ink); }
+.p-again {
+  margin-inline-start: auto;
+  padding: .25rem .7rem;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  background: var(--surface-2);
+  color: var(--ink-soft);
+  font: inherit;
+  font-size: .8rem;
+  cursor: pointer;
+}
+.p-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); gap: .7rem; }
+.p-target {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 7.5rem;
+  padding: .8rem;
+  border: 2px solid var(--rule);
+  border-radius: 10px;
+  background: var(--surface-2);
+  color: var(--ink);
+  font-size: .95rem;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: background .15s, border-color .15s;
+}
+.p-target:hover { border-color: var(--accent); }
+.p-target.ok { border-color: var(--good); background: var(--good-wash); color: var(--good); }
+.p-target.ok::after {
+  content: "✓";
+  position: absolute;
+  inset-block-start: .35rem;
+  inset-inline-end: .55rem;
+  font-size: 1.2rem;
+}
+.p-target.drag { place-items: stretch; cursor: default; }
+.p-drag-row { display: flex; align-items: center; justify-content: space-between; gap: .5rem; }
+.p-ball {
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  background: var(--mark);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+  cursor: grab;
+  touch-action: none;
+}
+.p-ball.held { cursor: grabbing; }
+.p-box {
+  width: 3.6rem;
+  height: 3.6rem;
+  border: 2px dashed var(--ink-faint);
+  border-radius: 10px;
+}
+.p-target.ok .p-box { border-color: var(--good); }
+.p-say { margin: 0 0 .7rem; color: var(--ink-soft); font-size: .92rem; line-height: 1.8; }
+.p-input {
+  width: 100%;
+  padding: .65rem .8rem;
+  border: 2px solid var(--rule);
+  border-radius: 8px;
+  background: var(--surface-2);
+  color: var(--ink);
+  font-family: var(--f-la);
+  font-size: 1.15rem;
+  direction: ltr;
+  user-select: text;
+  -webkit-user-select: text;
+}
+.p-checks { display: flex; flex-wrap: wrap; gap: .45rem; margin: .8rem 0 0; padding: 0; list-style: none; }
+.p-checks li {
+  padding: .25rem .7rem;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  color: var(--ink-faint);
+  font-size: .82rem;
+}
+.p-checks li.ok { border-color: var(--good); background: var(--good-wash); color: var(--good); }
+.p-checks li.ok::before { content: "✓ "; }
+.p-done {
+  margin-top: .8rem;
+  padding: .55rem .8rem;
+  border-radius: 8px;
+  background: var(--good-wash);
+  color: var(--good);
+  font-weight: 700;
+  text-align: center;
+}
+
+/* --- loading / failed / shut --------------------------------------------- */
+.state { margin: 0; padding: 3rem 0; color: var(--ink-faint); text-align: center; }
+.shut {
+  max-width: 34rem;
+  margin: 6rem auto;
+  padding: 2.5rem;
+  text-align: center;
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 14px;
+}
+.shut h2 { margin: 0 0 .6rem; color: var(--accent); font-size: 1.3rem; }
+.shut p { margin: 0; color: var(--ink-soft); }
+
+/* --- toast ---------------------------------------------------------------- */
+.toast {
+  position: fixed;
+  inset-block-end: 1.2rem;
+  inset-inline: 0;
+  z-index: 70;
+  width: fit-content;
+  max-width: calc(100% - 2rem);
+  margin: 0 auto;
+  padding: .6rem 1rem;
+  border-radius: 8px;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: .88rem;
+  box-shadow: var(--shadow);
+}
+
+/* --- a narrow screen ----------------------------------------------------- */
+@media (max-width: 900px) {
+  .shell { grid-template-columns: minmax(0, 1fr); padding: .8rem .75rem 4rem; }
+  .rail { display: none; }
+  .notice { grid-column: 1; }
+  .jump { display: block; }
+  .reader { padding: 1.4rem 1.1rem 2rem; }
+  .topbar { padding: .6rem .75rem; gap: .5rem .7rem; }
+}
+
+/* --- paper --------------------------------------------------------------- */
+@media print {
+  body { background: #fff; }
+  .topbar, .rail, .toast, .practice, .watermark, .zoom { display: none !important; }
+  .shell { display: block; max-width: none; padding: 0; }
+  .reader { max-width: none; padding: 0; border: 0; box-shadow: none; }
+  .reader h1 { break-before: page; }
+  .reader > h1:first-child { break-before: avoid; }
+  .reader figure, .reader table, .reader blockquote { break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+
+<div class="app" dir="rtl">
+
+  <div class="watermark" id="watermark" hidden aria-hidden="true"></div>
+  <div class="toast" id="toast" role="status" hidden></div>
+  <div class="zoom" id="zoom" hidden><img alt=""></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" fill="none" stroke="currentColor"
+           stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="4" y="4.5" width="16" height="11" rx="1.6"/>
+        <path d="M2 19.5h20l-1.6-4H3.6z"/>
+      </svg>
+      <b data-t="brand">ڕێنمایی قوتابی</b>
+    </div>
+
+    <div class="tabs-doc" id="tabsDoc" role="tablist" hidden>
+      <button type="button" id="tab-guide" class="on" data-doc="guide"></button>
+      <button type="button" id="tab-study" data-doc="study"></button>
+    </div>
+
+    <div class="switch">
+      <span class="lbl" data-t="langLabel">زمان</span>
+      <div class="seg" id="langSeg" role="group">
+        <button type="button" data-lang="ku" aria-pressed="true">کوردی</button>
+        <button type="button" data-lang="en" aria-pressed="false">English</button>
+      </div>
+    </div>
+
+    <select class="jump" id="jump" aria-label="Lessons"></select>
+    <button type="button" class="icon-btn" id="themeBtn" title="Theme" aria-label="Theme">◐</button>
+    <button type="button" class="icon-btn" id="fullBtn" title="Full screen" aria-label="Full screen" hidden>⛶</button>
+    <button type="button" class="icon-btn" id="printBtn" title="Print" aria-label="Print">⎙</button>
+  </header>
+
+  <div class="shell">
+    <div class="notice" id="notice" hidden>
+      <span class="mark" aria-hidden="true">⚠️</span>
+      <span class="text"></span>
+    </div>
+
+    <nav class="rail" aria-label="Contents">
+      <h2 data-t="tocLabel">ناوەڕۆک</h2>
+      <div class="toc" id="toc"></div>
+    </nav>
+    <main class="reader" id="reader"></main>
+  </div>
+
+</div>
+
+<script type="application/json" id="docs-data">{}</script>
+<script>
+(function () {
+  "use strict";
+
+  var DOCS = JSON.parse(document.getElementById("docs-data").textContent);
+
+  /* On the hosted page the guide is not in this file — it is fetched, so a
+     saved copy of the page is an empty shell. Offline builds ship the text
+     inside DOCS and leave FETCH null. */
+  var FETCH = {"ku": "ku.md", "en": "en.md"};
+  var STUDY = null;
+
+  var UI = {
+    ku: { brand: "ڕێنمایی قوتابی", langLabel: "زمان", tocLabel: "ناوەڕۆک",
+          copy: "کۆپی", copied: "کۆپی کرا",
+          keep: "بۆ هێشتنەوەی کۆپییەک، Ctrl + P دابگرە و وەک PDF چاپی بکە",
+          full: "تەواوی شاشە",
+          zoom: "بۆ گەورەکردن کلیکی لەسەر بکە",
+          loading: "دەقەکە دەهێنرێت…",
+          failed: "نەتوانرا دەقەکە بهێنرێت. پەیوەندی ئینتەرنێتەکەت بپشکنە و لاپەڕەکە دووبارە بارکە.",
+          again: "دووبارە",
+          mouse: { title: "ڕاهێنانی ماوس — لێرە تاقی بکەرەوە",
+                   click: "یەک کلیک لێرە بکە",
+                   dblclick: "دوو کلیک لێرە بکە",
+                   contextmenu: "کلیکی ڕاست لێرە بکە",
+                   drag: "بازنە سوورەکە ڕابکێشە بۆ ناو چوارگۆشەکە",
+                   done: "ئافەرین! هەر چوارت تەواو کرد." },
+          keys: { title: "ڕاهێنانی کیبۆرد — لێرە تاقی بکەرەوە",
+                  say: "ناوی خۆت بە ئینگلیزی بنووسە، بۆ نموونە Ahmad Ali. یەکەم پیت گەورە بێت: Shift ڕابگرە و پیتەکە دابگرە. لە کۆتاییدا Enter دابگرە.",
+                  letters: "پیت", capital: "پیتی گەورە: Shift", space: "بۆشایی: Space",
+                  back: "سڕینەوە: Backspace", enter: "کۆتایی: Enter",
+                  done: "ئافەرین! کیبۆردەکەت ناسی." } },
+    en: { brand: "Student Guide", langLabel: "Language", tocLabel: "Contents",
+          copy: "Copy", copied: "Copied",
+          keep: "To keep a copy, press Ctrl + P and print to PDF",
+          full: "Full screen",
+          zoom: "Click to enlarge",
+          loading: "Loading the text…",
+          failed: "The text could not be loaded. Check your connection and reload the page.",
+          again: "Again",
+          mouse: { title: "Mouse practice — try it here",
+                   click: "Click here once",
+                   dblclick: "Double-click here",
+                   contextmenu: "Right-click here",
+                   drag: "Drag the red circle into the box",
+                   done: "Well done! All four are done." },
+          keys: { title: "Keyboard practice — try it here",
+                  say: "Type your name in English, for example Ahmad Ali. Make the first letter a capital: hold Shift and press the letter. Press Enter at the end.",
+                  letters: "Letters", capital: "A capital: Shift", space: "A space: Space",
+                  back: "Deleting: Backspace", enter: "Finishing: Enter",
+                  done: "Well done! You know your keyboard." } }
+  };
+
+  var STORE = "caStudent";
+  var NOTICE_KU = "";
+  var MARK_KU = "";
+  var state = { lang: "ku", doc: "guide" };
+
+  var TABS = {
+    guide: ["ڕێنمایی وانەکان", "Lesson Guide"],
+    study: ["پرسیار و وەڵام", "Questions and Answers"]
+  };
+  var SHUT = {
+    ku: ["لاپەڕەکە داخراوە", "لە کاتی تاقیکردنەوەدا ئەم لاپەڕەیە دەستناکەوێت."],
+    en: ["This page is closed", "It is not available during an examination."]
+  };
+
+  /* ---- which document, and whether the page is open at all ------------- */
+  function docFiles(lang) {
+    /* an offline copy has neither list: its text is already in DOCS */
+    return state.doc === "study" ? (STUDY && STUDY[lang]) : (FETCH && FETCH[lang]);
+  }
+
+  function setDoc(which) {
+    state.doc = which;
+    remember(STORE + ".doc", which);
+    drawTabs();
+    paint();
+  }
+
+  function drawTabs() {
+    var n = state.lang === "en" ? 1 : 0;
+    var guide = document.getElementById("tab-guide");
+    var study = document.getElementById("tab-study");
+    guide.textContent = TABS.guide[n];
+    study.textContent = TABS.study[n];
+    guide.className = state.doc === "guide" ? "on" : "";
+    study.className = state.doc === "study" ? "on" : "";
+    /* the second tab is offered only once there is a sheet to show */
+    document.getElementById("tabsDoc").hidden = !STUDY;
+  }
+
+  /* Read on every load, so the page can be taken down from the repository
+     without republishing anything else. Resolves to whether it may be drawn. */
+  function checkOpen() {
+    return fetch("closed.json", { cache: "no-store" }).then(function (r) {
+      return r.ok ? r.json() : null;
+    }).then(function (flag) {
+      if (flag && flag.closed) {
+        var say = SHUT[state.lang] || SHUT.ku;
+        document.querySelector(".app").innerHTML =
+          '<div class="shut"><h2>' + say[0] + "</h2><p>" + say[1] + "</p></div>";
+        return false;
+      }
+      return true;
+    }, function () { return true; });   // no switch published: stay open
+  }
+
+  /* ---- storage is a convenience, never a requirement -------------------- */
+  function remember(key, value) {
+    try { localStorage.setItem(key, value); } catch (e) { /* ignore */ }
+  }
+  function recall(key) {
+    try { return localStorage.getItem(key); } catch (e) { return null; }
+  }
+
+  /* ---- markdown ---------------------------------------------------------
+     A small parser, written out in full so the page works with no network
+     and no library.
+
+     Beyond the usual marks it reads
+       ![caption](picture)   a picture with its caption, on a line of its own
+       [[Ctrl+C]]            keys to press
+       ((1))                 a red number, the same as on the screenshots
+       - [ ] text            a line the student ticks off
+       <!-- practice:mouse -->, <!-- practice:keys -->   practice on the page
+       <!-- collapse -->     the heading under it opens and closes          */
+
+  function esc(s) {
+    return s.replace(/[&<>"]/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
+    });
+  }
+
+  function keys(combo) {
+    return '<span class="combo">' + combo.split("+").map(function (k) {
+      return "<kbd>" + k.trim() + "</kbd>";
+    }).join("+") + "</span>";
+  }
+
+  function inline(s) {
+    s = esc(s);
+    s = s.replace(/`([^`]+)`/g, function (m, c) { return "<code>" + c + "</code>"; });
+    s = s.replace(/\[\[([^\]]+)\]\]/g, function (m, c) { return keys(c); });
+    s = s.replace(/\(\((\d{1,2})\)\)/g, '<span class="num">$1</span>');
+    s = s.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+    s = s.replace(/(^|[^*])\*([^*\s][^*]*)\*/g, "$1<em>$2</em>");
+    s = s.replace(/!\[([^\]]*)\]\(([^)\s]+)\)/g, '<img src="$2" alt="$1">');
+    s = s.replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, function (m, t, u) {
+      var ext = /^https?:/.test(u);
+      return '<a href="' + u + '"' + (ext ? ' target="_blank" rel="noopener"' : "") + ">" + t + "</a>";
+    });
+    s = s.replace(/&lt;(https?:\/\/[^\s&]+)&gt;/g, '<a href="$1" target="_blank" rel="noopener">$1</a>');
+    /* "8 GB" in a Kurdish line: the space between the number and the unit
+       takes the line's direction, and the pair is drawn as "GB 8". Kept as
+       one left-to-right island, it reads the right way round. */
+    s = s.replace(/(\d+(?:[.,]\d+)?) (GB|MB|TB|GHz|mm)\b/g, '<bdi dir="ltr">$1 $2</bdi>');
+    return s;
+  }
+
+  var LIST_ORDERED = /^[0-9٠-٩۰-۹]+[.)]\s+/;
+  var LIST_BULLET = /^[-*]\s+/;
+  var FIGURE = /^!\[([^\]]*)\]\(([^)\s]+)\)(\{small\})?\s*$/;
+  var CHECK = /^[-*]\s+\[( |x)\]\s+/;
+
+  function practice(kind) {
+    var w = UI[state.lang];
+    var again = '<button type="button" class="p-again">' + w.again + "</button>";
+    if (kind === "mouse") {
+      var m = w.mouse;
+      return '<div class="practice" data-practice="mouse">' +
+        '<div class="p-head"><b>🖱️ ' + m.title + "</b>" + again + "</div>" +
+        '<div class="p-grid">' +
+        '<div class="p-target" data-need="click">' + m.click + "</div>" +
+        '<div class="p-target" data-need="dblclick">' + m.dblclick + "</div>" +
+        '<div class="p-target" data-need="contextmenu">' + m.contextmenu + "</div>" +
+        '<div class="p-target drag" data-need="drag"><span>' + m.drag + "</span>" +
+        '<div class="p-drag-row" dir="ltr"><div class="p-ball"></div><div class="p-box"></div></div></div>' +
+        "</div>" +
+        '<div class="p-done" hidden>' + m.done + "</div></div>";
+    }
+    if (kind === "keys") {
+      var k = w.keys;
+      return '<div class="practice" data-practice="keys">' +
+        '<div class="p-head"><b>⌨️ ' + k.title + "</b>" + again + "</div>" +
+        '<p class="p-say">' + inline(k.say) + "</p>" +
+        '<input type="text" class="p-input" autocomplete="off" spellcheck="false" autocapitalize="off">' +
+        '<ul class="p-checks">' +
+        '<li data-need="letters">' + k.letters + "</li>" +
+        '<li data-need="capital">' + k.capital + "</li>" +
+        '<li data-need="space">' + k.space + "</li>" +
+        '<li data-need="back">' + k.back + "</li>" +
+        '<li data-need="enter">' + k.enter + "</li>" +
+        "</ul>" +
+        '<div class="p-done" hidden>' + k.done + "</div></div>";
+    }
+    return "";
+  }
+
+  function checksDone() {
+    try { return JSON.parse(recall(STORE + ".checks")) || {}; } catch (e) { return {}; }
+  }
+
+  function render(md, headings) {
+    var lines = md.replace(/\r\n/g, "\n").split("\n");
+    var out = [];
+    var i = 0;
+    var para = [];
+    var ticked = checksDone();
+
+    function flushPara() {
+      if (para.length) {
+        out.push("<p>" + inline(para.join(" ")) + "</p>");
+        para = [];
+      }
+    }
+
+    while (i < lines.length) {
+      var line = lines[i];
+
+      /* something to type or copy exactly */
+      if (/^```/.test(line)) {
+        flushPara();
+        var code = [];
+        i++;
+        while (i < lines.length && !/^```/.test(lines[i])) { code.push(lines[i]); i++; }
+        i++;
+        var text = code.join("\n");
+        out.push('<div class="block"><button type="button" class="copy">' + UI[state.lang].copy +
+          '</button><pre><code data-copy="' + esc(text) + '">' + esc(text) + "</code></pre></div>");
+        continue;
+      }
+
+      /* practice on the page */
+      var drill = /^<!--\s*practice:(\w+)\s*-->\s*$/.exec(line);
+      if (drill) {
+        flushPara();
+        out.push(practice(drill[1]));
+        i++;
+        continue;
+      }
+
+      /* a picture with its caption */
+      var fig = FIGURE.exec(line);
+      if (fig) {
+        flushPara();
+        out.push('<figure' + (fig[3] ? ' class="small"' : "") + '><img src="' + fig[2] +
+          '" alt="' + esc(fig[1]) + '" title="' + UI[state.lang].zoom + '" loading="lazy">' +
+          (fig[1] ? "<figcaption>" + inline(fig[1]) + "</figcaption>" : "") + "</figure>");
+        i++;
+        continue;
+      }
+
+      /* table */
+      if (/^\s*\|/.test(line) && i + 1 < lines.length && /^\s*\|[\s:|-]+\|\s*$/.test(lines[i + 1])) {
+        flushPara();
+        var cells = function (row) {
+          return row.trim().replace(/^\||\|$/g, "").split("|").map(function (c) { return c.trim(); });
+        };
+        var head = cells(line);
+        i += 2;
+        var body = [];
+        while (i < lines.length && /^\s*\|/.test(lines[i])) { body.push(cells(lines[i])); i++; }
+        var t = "<div class='table-wrap'><table><thead><tr>";
+        head.forEach(function (c) { t += "<th>" + inline(c) + "</th>"; });
+        t += "</tr></thead><tbody>";
+        body.forEach(function (row) {
+          t += "<tr>";
+          row.forEach(function (c) { t += "<td>" + inline(c) + "</td>"; });
+          t += "</tr>";
+        });
+        out.push(t + "</tbody></table></div>");
+        continue;
+      }
+
+      /* heading */
+      var h = /^(#{1,6})\s+(.*)$/.exec(line);
+      if (h) {
+        flushPara();
+        var level = h[1].length;
+        var id = "h" + headings.length;
+        headings.push({ id: id, level: level, text: h[2].replace(/[*`]|\[\[|\]\]|\(\(|\)\)/g, "") });
+        out.push("<h" + level + ' id="' + id + '">' + inline(h[2]) + "</h" + level + ">");
+        i++;
+        continue;
+      }
+
+      /* an explanation the reader opens if they want it */
+      if (/^<!--\s*collapse\s*-->\s*$/.test(line)) {
+        flushPara();
+        i++;
+        var mark = /^(#{1,6})\s+(.*)$/.exec(lines[i] || "");
+        if (!mark) { continue; }
+        var depth = mark[1].length;
+        var boxId = "h" + headings.length;
+        headings.push({ id: boxId, level: depth, text: mark[2].replace(/[*`]/g, "") });
+        i++;
+        var inside = [];
+        while (i < lines.length) {
+          var ahead = /^(#{1,6})\s+/.exec(lines[i]);
+          if (ahead && ahead[1].length <= depth) { break; }
+          if (/^<!--\s*collapse\s*-->\s*$/.test(lines[i])) { break; }
+          inside.push(lines[i]);
+          i++;
+        }
+        out.push('<details class="explain" id="' + boxId + '"><summary>' +
+          inline(mark[2]) + "</summary>" + render(inside.join("\n"), headings) + "</details>");
+        continue;
+      }
+
+      /* horizontal rule */
+      if (/^\s*(---|\*\*\*)\s*$/.test(line)) {
+        flushPara();
+        out.push("<hr>");
+        i++;
+        continue;
+      }
+
+      /* blockquote — collected, then parsed as a document of its own */
+      if (/^\s*>/.test(line)) {
+        flushPara();
+        var quoted = [];
+        while (i < lines.length && /^\s*>/.test(lines[i])) {
+          quoted.push(lines[i].replace(/^\s*>\s?/, ""));
+          i++;
+        }
+        out.push("<blockquote>" + render(quoted.join("\n"), headings) + "</blockquote>");
+        continue;
+      }
+
+      /* a list to tick off: kept per heading and place, so the Kurdish and
+         the English page share their ticks */
+      if (CHECK.test(line)) {
+        flushPara();
+        var owner = headings.length ? headings[headings.length - 1].id : "top";
+        var n = 0;
+        var rows = [];
+        while (i < lines.length && CHECK.test(lines[i])) {
+          var key = owner + ":" + n++;
+          var on = !!ticked[key];
+          rows.push('<li' + (on ? ' class="ok"' : "") + '><label><input type="checkbox" data-check="' +
+            key + '"' + (on ? " checked" : "") + "><span>" + inline(lines[i].replace(CHECK, "")) +
+            "</span></label></li>");
+          i++;
+        }
+        out.push('<ul class="checks">' + rows.join("") + "</ul>");
+        continue;
+      }
+
+      /* lists */
+      if (LIST_BULLET.test(line) || LIST_ORDERED.test(line)) {
+        flushPara();
+        var ordered = LIST_ORDERED.test(line);
+        var items = [];
+        while (i < lines.length && (LIST_BULLET.test(lines[i]) || LIST_ORDERED.test(lines[i])) &&
+               !CHECK.test(lines[i])) {
+          items.push(lines[i].replace(ordered ? LIST_ORDERED : LIST_BULLET, ""));
+          i++;
+          /* a wrapped continuation line belongs to the item above it */
+          while (i < lines.length && /^\s{2,}\S/.test(lines[i]) &&
+                 !LIST_BULLET.test(lines[i].trim()) && !LIST_ORDERED.test(lines[i].trim())) {
+            items[items.length - 1] += " " + lines[i].trim();
+            i++;
+          }
+        }
+        var tag = ordered ? "ol" : "ul";
+        out.push("<" + tag + ">" + items.map(function (it) {
+          return "<li>" + inline(it) + "</li>";
+        }).join("") + "</" + tag + ">");
+        continue;
+      }
+
+      if (!line.trim()) { flushPara(); i++; continue; }
+
+      para.push(line.trim());
+      i++;
+    }
+
+    flushPara();
+    return out.join("\n");
+  }
+
+  /* ---- painting ---------------------------------------------------------- */
+  var reader = document.getElementById("reader");
+  var notice = document.getElementById("notice");
+  var watermark = document.getElementById("watermark");
+  var toc = document.getElementById("toc");
+  var jump = document.getElementById("jump");
+  var app = document.querySelector(".app");
+  var fullBtn = document.getElementById("fullBtn");
+
+  function paint() {
+    var key = state.doc + ":" + state.lang;
+    if (DOCS[key] === undefined && docFiles(state.lang)) {
+      return fetchGuide(state.lang);
+    }
+
+    var md = DOCS[key] || DOCS[state.lang] || "";
+    var headings = [];
+    var rtl = state.lang === "ku";
+
+    app.setAttribute("dir", rtl ? "rtl" : "ltr");
+    document.documentElement.lang = rtl ? "ckb" : "en";
+
+    if (NOTICE_KU && state.lang === "ku") {
+      notice.querySelector(".text").textContent = NOTICE_KU;
+      notice.hidden = false;
+    } else {
+      notice.hidden = true;
+    }
+
+    if (MARK_KU && state.lang === "ku") {
+      if (!watermark.childNodes.length) {
+        var row = new Array(8).join(MARK_KU + "   ·   ");
+        for (var r = 0; r < 30; r++) {
+          var span = document.createElement("span");
+          span.textContent = row;
+          watermark.appendChild(span);
+        }
+      }
+      watermark.hidden = false;
+    } else {
+      watermark.hidden = true;
+    }
+
+    reader.innerHTML = render(md, headings);
+    window.scrollTo(0, 0);
+
+    /* labels follow the reading language */
+    var words = UI[state.lang];
+    document.querySelectorAll("[data-t]").forEach(function (el) {
+      var w = words[el.getAttribute("data-t")];
+      if (w) { el.textContent = w; }
+    });
+    fullBtn.title = words.full;
+    fullBtn.setAttribute("aria-label", words.full);
+
+    /* The tab, and the header the browser prints on every sheet, both come
+       from the document title — so it follows the guide and its language. */
+    document.title = headings.length ? headings[0].text : document.title;
+
+    /* a picker of the lessons, for narrow screens */
+    jump.innerHTML = "";
+    headings.filter(function (h) { return h.level === 1; }).forEach(function (h) {
+      var option = document.createElement("option");
+      option.value = h.id;
+      option.textContent = h.text;
+      jump.appendChild(option);
+    });
+
+    /* contents */
+    toc.innerHTML = "";
+    headings.filter(function (h) { return h.level <= 2; }).forEach(function (h) {
+      var a = document.createElement("a");
+      a.href = "#" + h.id;
+      a.className = "lvl-" + h.level;
+      a.textContent = h.text;
+      toc.appendChild(a);
+    });
+
+    document.querySelectorAll("#langSeg button").forEach(function (b) {
+      b.setAttribute("aria-pressed", String(b.dataset.lang === state.lang));
+    });
+
+    spy();
+  }
+
+  /* ---- fetching the text ------------------------------------------------ */
+  function fetchGuide(lang) {
+    var words = UI[lang];
+    reader.innerHTML = '<p class="state">' + words.loading + "</p>";
+    fetch(docFiles(lang), { cache: "no-cache" }).then(function (response) {
+      if (!response.ok) { throw new Error(response.status); }
+      return response.text();
+    }).then(function (text) {
+      DOCS[state.doc + ":" + lang] = text;
+      paint();
+    })["catch"](function () {
+      reader.innerHTML = '<p class="state">' + words.failed + "</p>";
+    });
+  }
+
+  /* ---- practice ----------------------------------------------------------
+     Each target listens for the one thing it asks for. A box counts once;
+     "again" clears the whole drill. */
+  function hit(box) {
+    if (box.classList.contains("ok")) { return; }
+    box.classList.add("ok");
+    var drill = box.closest(".practice");
+    var left = drill.querySelectorAll("[data-need]:not(.ok)").length;
+    if (!left) { drill.querySelector(".p-done").hidden = false; }
+  }
+
+  function resetDrill(drill) {
+    drill.querySelectorAll(".ok").forEach(function (el) { el.classList.remove("ok"); });
+    drill.querySelector(".p-done").hidden = true;
+    var ball = drill.querySelector(".p-ball");
+    if (ball) { ball.style.transform = ""; }
+    var input = drill.querySelector(".p-input");
+    if (input) { input.value = ""; input.focus(); }
+  }
+
+  reader.addEventListener("click", function (e) {
+    var target = e.target.closest('.p-target[data-need="click"]');
+    if (target) { hit(target); return; }
+    var again = e.target.closest(".p-again");
+    if (again) { resetDrill(again.closest(".practice")); return; }
+
+    var img = e.target.closest("figure img");
+    if (img) {
+      var zoom = document.getElementById("zoom");
+      zoom.querySelector("img").src = img.src;
+      zoom.hidden = false;
+      return;
+    }
+
+    var btn = e.target.closest(".copy");
+    if (!btn) { return; }
+    var code = btn.parentElement.querySelector("code");
+    var text = code.getAttribute("data-copy") || code.textContent;
+    var done = function () {
+      btn.textContent = UI[state.lang].copied;
+      btn.dataset.done = "1";
+      setTimeout(function () {
+        btn.textContent = UI[state.lang].copy;
+        btn.dataset.done = "";
+      }, 1400);
+    };
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(text).then(done, function () { /* ignore */ });
+    } else {
+      var sel = window.getSelection();
+      var range = document.createRange();
+      range.selectNodeContents(code);
+      sel.removeAllRanges();
+      sel.addRange(range);
+      done();
+    }
+  });
+
+  reader.addEventListener("dblclick", function (e) {
+    var target = e.target.closest('.p-target[data-need="dblclick"]');
+    if (target) { hit(target); }
+  });
+
+  reader.addEventListener("change", function (e) {
+    var box = e.target.closest("input[data-check]");
+    if (!box) { return; }
+    var map = checksDone();
+    if (box.checked) { map[box.dataset.check] = 1; } else { delete map[box.dataset.check]; }
+    remember(STORE + ".checks", JSON.stringify(map));
+    box.closest("li").classList.toggle("ok", box.checked);
+  });
+
+  /* dragging works the same with a mouse, a touchpad and a finger */
+  var held = null;
+  reader.addEventListener("pointerdown", function (e) {
+    var ball = e.target.closest(".p-ball");
+    if (!ball) { return; }
+    e.preventDefault();
+    held = { ball: ball, x: e.clientX, y: e.clientY };
+    ball.classList.add("held");
+    try { ball.setPointerCapture(e.pointerId); } catch (err) { /* the reader listens anyway */ }
+  });
+  reader.addEventListener("pointermove", function (e) {
+    if (!held) { return; }
+    held.ball.style.transform = "translate(" + (e.clientX - held.x) + "px," + (e.clientY - held.y) + "px)";
+  });
+  reader.addEventListener("pointerup", function () {
+    if (!held) { return; }
+    var ball = held.ball;
+    held = null;
+    ball.classList.remove("held");
+    var target = ball.closest(".p-target");
+    var a = ball.getBoundingClientRect();
+    var b = target.querySelector(".p-box").getBoundingClientRect();
+    var cx = a.left + a.width / 2, cy = a.top + a.height / 2;
+    if (cx > b.left && cx < b.right && cy > b.top && cy < b.bottom) {
+      /* left where it was dropped, centred in the box */
+      var shift = ball.style.transform.match(/-?[\d.]+/g) || [0, 0];
+      ball.style.transform = "translate(" + (Number(shift[0]) + (b.left + b.width / 2 - cx)) + "px," +
+        (Number(shift[1]) + (b.top + b.height / 2 - cy)) + "px)";
+      hit(target);
+    } else if (!target.classList.contains("ok")) {
+      ball.style.transform = "";
+    }
+  });
+
+  reader.addEventListener("input", function (e) {
+    if (!e.target.classList.contains("p-input")) { return; }
+    var drill = e.target.closest(".practice");
+    var v = e.target.value;
+    if (/[A-Za-z]{2,}/.test(v)) { hit(drill.querySelector('[data-need="letters"]')); }
+    if (/[A-Z]/.test(v)) { hit(drill.querySelector('[data-need="capital"]')); }
+    if (/\S \S/.test(v)) { hit(drill.querySelector('[data-need="space"]')); }
+  });
+
+  reader.addEventListener("keydown", function (e) {
+    if (!e.target.classList.contains("p-input")) { return; }
+    var drill = e.target.closest(".practice");
+    if (e.key === "Backspace") { hit(drill.querySelector('[data-need="back"]')); }
+    if (e.key === "Enter" && /[A-Za-z]{2,}/.test(e.target.value)) {
+      hit(drill.querySelector('[data-need="enter"]'));
+    }
+  });
+
+  document.getElementById("zoom").addEventListener("click", function () { this.hidden = true; });
+
+  /* ---- which section am I in? ------------------------------------------- */
+  var spyTimer = null;
+  var shown = null;
+  function spy() {
+    var links = toc.querySelectorAll("a");
+    var current = null;
+    var lesson = null;
+    reader.querySelectorAll("h1, h2").forEach(function (h) {
+      if (h.getBoundingClientRect().top < 120) {
+        current = h.id;
+        if (h.tagName === "H1") { lesson = h.id; }
+      }
+    });
+    if (lesson && jump.value !== lesson) { jump.value = lesson; }
+
+    var active = null;
+    links.forEach(function (a) {
+      var here = a.getAttribute("href") === "#" + current;
+      a.classList.toggle("here", here);
+      if (here) { active = a; }
+    });
+
+    /* On a phone the rail is hidden — and scrolling a hidden element throws
+       the page back to the top, so nothing is done unless it is laid out. */
+    var rail = toc.parentElement;
+    if (active && active !== shown && rail.clientHeight > 0) {
+      shown = active;
+      var box = rail.getBoundingClientRect();
+      var link = active.getBoundingClientRect();
+      if (link.top < box.top + 8 || link.bottom > box.bottom - 8) {
+        active.scrollIntoView({ block: "nearest" });
+      }
+    }
+  }
+
+  window.addEventListener("scroll", function () {
+    if (spyTimer) { return; }
+    spyTimer = setTimeout(function () { spyTimer = null; spy(); }, 120);
+  }, { passive: true });
+
+  /* ---- controls ---------------------------------------------------------- */
+  document.getElementById("tabsDoc").addEventListener("click", function (e) {
+    var b = e.target.closest("button");
+    if (b) { setDoc(b.dataset.doc); }
+  });
+
+  document.getElementById("langSeg").addEventListener("click", function (e) {
+    var b = e.target.closest("button");
+    if (!b) { return; }
+    state.lang = b.dataset.lang;
+    remember(STORE + ".lang", state.lang);
+    drawTabs();
+    paint();
+  });
+
+  jump.addEventListener("change", function () {
+    var target = document.getElementById(jump.value);
+    if (target) { target.scrollIntoView({ block: "start" }); }
+  });
+
+  toc.addEventListener("click", function (e) {
+    var link = e.target.closest("a");
+    if (!link) { return; }
+    var target = document.getElementById(link.getAttribute("href").slice(1));
+    if (target && target.tagName === "DETAILS") { target.open = true; }
+  });
+
+  document.getElementById("themeBtn").addEventListener("click", function () {
+    var now = document.documentElement.getAttribute("data-theme");
+    var dark = now ? now === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
+    var next = dark ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", next);
+    remember("guide.theme", next);
+  });
+
+  document.getElementById("printBtn").addEventListener("click", function () { window.print(); });
+
+  /* ---- full screen, for a projector ------------------------------------- */
+  var root = document.documentElement;
+  var goFull = root.requestFullscreen || root.webkitRequestFullscreen;
+  var leaveFull = document.exitFullscreen || document.webkitExitFullscreen;
+  if (goFull) {
+    fullBtn.hidden = false;
+    fullBtn.addEventListener("click", function () {
+      if (document.fullscreenElement || document.webkitFullscreenElement) {
+        leaveFull.call(document);
+      } else {
+        goFull.call(root);
+      }
+    });
+  }
+
+  /* ---- saving the page is not the path; printing to PDF is --------------- */
+  var toast = document.getElementById("toast");
+  var toastTimer = null;
+
+  function hint(text) {
+    toast.textContent = text;
+    toast.hidden = false;
+    if (toastTimer) { clearTimeout(toastTimer); }
+    toastTimer = setTimeout(function () { toast.hidden = true; }, 3200);
+  }
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") { document.getElementById("zoom").hidden = true; }
+    if (!(e.ctrlKey || e.metaKey) || e.altKey) { return; }
+    var key = (e.key || "").toLowerCase();
+    if (key === "s" || key === "u") {
+      e.preventDefault();
+      hint(UI[state.lang].keep);
+    }
+  });
+
+  /* the right-click target is practice, so it is counted, not blocked */
+  document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+    var target = e.target.closest && e.target.closest('.p-target[data-need="contextmenu"]');
+    if (target) { hit(target); return; }
+    if (!e.target.closest || !e.target.closest(".practice")) { hint(UI[state.lang].keep); }
+  });
+
+  /* ---- a printout is not interactive, so nothing may stay folded away ---- */
+  window.addEventListener("beforeprint", function () {
+    reader.querySelectorAll("details:not([open])").forEach(function (box) {
+      box.dataset.wasClosed = "1";
+      box.open = true;
+    });
+  });
+  window.addEventListener("afterprint", function () {
+    reader.querySelectorAll("details[data-was-closed]").forEach(function (box) {
+      box.open = false;
+      delete box.dataset.wasClosed;
+    });
+  });
+
+  /* ---- start ------------------------------------------------------------- */
+  var savedTheme = recall("guide.theme");
+  if (savedTheme) { document.documentElement.setAttribute("data-theme", savedTheme); }
+  var savedLang = recall(STORE + ".lang");
+  if (savedLang === "ku" || savedLang === "en") { state.lang = savedLang; }
+  if (STUDY && recall(STORE + ".doc") === "study") { state.doc = "study"; }
+
+  drawTabs();
+  if (FETCH) {
+    checkOpen().then(function (open) { if (open) { setDoc(state.doc); } });
+  } else {
+    setDoc(state.doc);
+  }
+})();
+</script>
+</body>
+</html>
