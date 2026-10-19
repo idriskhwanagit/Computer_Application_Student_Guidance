@@ -406,6 +406,17 @@ body {
 
 .reader strong, .reader b, .reader em { unicode-bidi: plaintext; }
 
+/* the English line under a Kurdish question on the revision sheet */
+.reader p.en-aside {
+  margin-top: -.4rem;
+  direction: ltr;
+  unicode-bidi: embed;
+  text-align: start;
+  color: var(--ink-soft);
+  font-size: .92em;
+  font-style: italic;
+}
+
 /* --- a key on the keyboard ----------------------------------------------- */
 .combo { direction: ltr; unicode-bidi: isolate; white-space: nowrap; }
 kbd {
@@ -817,7 +828,7 @@ kbd {
      saved copy of the page is an empty shell. Offline builds ship the text
      inside DOCS and leave FETCH null. */
   var FETCH = {"ku": "ku.md", "en": "en.md"};
-  var STUDY = null;
+  var STUDY = {"ku": "study.ku.md", "en": "study.en.md"};
 
   var UI = {
     ku: { brand: "ڕێنمایی قوتابی", langLabel: "زمان", tocLabel: "ناوەڕۆک",
@@ -835,7 +846,7 @@ kbd {
                    drag: "بازنە سوورەکە ڕابکێشە بۆ ناو چوارگۆشەکە",
                    done: "ئافەرین! هەر چوارت تەواو کرد." },
           keys: { title: "ڕاهێنانی کیبۆرد — لێرە تاقی بکەرەوە",
-                  say: "ناوی خۆت بە ئینگلیزی بنووسە، بۆ نموونە Ahmad Ali. یەکەم پیت گەورە بێت: Shift ڕابگرە و پیتەکە دابگرە. لە کۆتاییدا Enter دابگرە.",
+                  say: "ناوی خۆت بە ئینگلیزی بنووسە، بۆ نموونە Ahmad Ali. یەکەم پیت گەورە بێت: دەست لەسەر دوگمەی Shift دابنێ و پیتەکە دابگرە. لە کۆتاییدا Enter دابگرە.",
                   letters: "پیت", capital: "پیتی گەورە: Shift", space: "بۆشایی: Space",
                   back: "سڕینەوە: Backspace", enter: "کۆتایی: Enter",
                   done: "ئافەرین! کیبۆردەکەت ناسی." } },
@@ -854,7 +865,7 @@ kbd {
                    drag: "Drag the red circle into the box",
                    done: "Well done! All four are done." },
           keys: { title: "Keyboard practice — try it here",
-                  say: "Type your name in English, for example Ahmad Ali. Make the first letter a capital: hold Shift and press the letter. Press Enter at the end.",
+                  say: "Type your name in English, for example Ahmad Ali. Make the first letter a capital: keep your finger on the Shift key and press the letter. Press Enter at the end.",
                   letters: "Letters", capital: "A capital: Shift", space: "A space: Space",
                   back: "Deleting: Backspace", enter: "Finishing: Enter",
                   done: "Well done! You know your keyboard." } }
@@ -1019,7 +1030,13 @@ kbd {
 
     function flushPara() {
       if (para.length) {
-        out.push("<p>" + inline(para.join(" ")) + "</p>");
+        var text = para.join(" ");
+        /* "@en " opens the English line the revision sheet prints under a
+           Kurdish question; it is pinned left to right, as in the MIS guide,
+           or a trailing "?" lands at the wrong end of it */
+        out.push(text.indexOf("@en ") === 0
+          ? '<p class="en-aside">' + inline(text.slice(4)) + "</p>"
+          : "<p>" + inline(text) + "</p>");
         para = [];
       }
     }
