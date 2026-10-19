@@ -192,9 +192,10 @@ body {
   outline-offset: 2px;
 }
 
-/* --- jumping between lessons on a phone ----------------------------------
-   The rail is no use on a narrow screen. A native picker of the lessons is
-   one tap instead.
+/* --- jumping between lessons when the rail does not fit -------------------
+   On a phone, and on a laptop zoomed to 110% or more, the rail takes room
+   the page needs. A native picker of the lessons and their parts is one tap
+   instead.
    ------------------------------------------------------------------------ */
 .jump {
   display: none;
@@ -743,12 +744,21 @@ kbd {
   box-shadow: var(--shadow);
 }
 
-/* --- a narrow screen ----------------------------------------------------- */
-@media (max-width: 900px) {
-  .shell { grid-template-columns: minmax(0, 1fr); padding: .8rem .75rem 4rem; }
+/* --- no room for the rail ------------------------------------------------
+   1200px is a full-HD laptop at 150% scaling zoomed to 110%: from there on
+   the rail goes, the picker takes its place, and the page gets the room -
+   wider lines, but still short enough for the eye to find the next one. */
+@media (max-width: 1200px) {
+  :root { --measure: 85ch; }
+  .shell { grid-template-columns: minmax(0, 1fr); }
   .rail { display: none; }
   .notice { grid-column: 1; }
   .jump { display: block; }
+}
+
+/* --- a narrow screen ----------------------------------------------------- */
+@media (max-width: 900px) {
+  .shell { padding: .8rem .75rem 4rem; }
   .reader { padding: 1.4rem 1.1rem 2rem; }
   .topbar { padding: .6rem .75rem; gap: .5rem .7rem; }
 }
@@ -1265,12 +1275,13 @@ kbd {
        from the document title — so it follows the guide and its language. */
     document.title = headings.length ? headings[0].text : document.title;
 
-    /* a picker of the lessons, for narrow screens */
+    /* a picker of the lessons and their parts, the rail's own list, for when
+       the rail does not fit; a part is indented under its lesson */
     jump.innerHTML = "";
-    headings.filter(function (h) { return h.level === 1; }).forEach(function (h) {
+    headings.filter(function (h) { return h.level <= 2; }).forEach(function (h) {
       var option = document.createElement("option");
       option.value = h.id;
-      option.textContent = h.text;
+      option.textContent = (h.level === 2 ? "    " : "") + h.text;
       jump.appendChild(option);
     });
 
@@ -1438,14 +1449,10 @@ kbd {
   function spy() {
     var links = toc.querySelectorAll("a");
     var current = null;
-    var lesson = null;
     reader.querySelectorAll("h1, h2").forEach(function (h) {
-      if (h.getBoundingClientRect().top < 120) {
-        current = h.id;
-        if (h.tagName === "H1") { lesson = h.id; }
-      }
+      if (h.getBoundingClientRect().top < 120) { current = h.id; }
     });
-    if (lesson && jump.value !== lesson) { jump.value = lesson; }
+    if (current && jump.value !== current) { jump.value = current; }
 
     var active = null;
     links.forEach(function (a) {
@@ -1489,7 +1496,9 @@ kbd {
 
   jump.addEventListener("change", function () {
     var target = document.getElementById(jump.value);
-    if (target) { target.scrollIntoView({ block: "start" }); }
+    if (!target) { return; }
+    if (target.tagName === "DETAILS") { target.open = true; }
+    target.scrollIntoView({ block: "start" });
   });
 
   toc.addEventListener("click", function (e) {

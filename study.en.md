@@ -1,19 +1,19 @@
 # Questions and Answers — Prepared by M. Idris Qadir
 
-> **This sheet is for revision.** The quiz questions come from it — know
-> these and the quiz is straightforward.
+> **This sheet is for revision.** The papers are hands-on: you download a file,
+> do the tasks on your laptop and tick what you see. These questions teach you
+> what each button and key does — which is what the tasks need.
 
-> The sheet is in both languages so that you can follow it, but **the quiz
-> questions are in English only** — so read the English line under each
-> question too. Button and key names stay in English, as they appear on the
-> screen.
+> The sheet is in both languages so that you can follow it, but **the papers are
+> in English only** — so read the English line under each question too. Button
+> and key names stay in English, as they appear on the screen.
 
-> The midterm and the final are practical: on the computer, you do the kind
-> of work the lessons' tasks had you do. The last page says what to expect.
+> The best preparation: do every lesson's task with your own hands. The last
+> page says what to expect.
 
 > **Marks:** homework **10** · report **16** · quiz **8** (the average of both quizzes) · midterm **24** · activity **2** · final **40** — total **100**.
 
-> **Mock:** at the end of lesson 3 there is a mock quiz. Its mark does not count — it is there so you try Google Forms and your university Gmail.
+> **Mock:** at the end of lesson 3 there is a mock quiz. Its mark does not count — it is there so you try a hands-on paper once: a file from the e-mail, and tasks on it.
 
 ---
 
@@ -638,23 +638,25 @@ None of this is a secret. Knowing what is coming is how you prepare for it.
 |  | Quiz | Midterm | Final |
 |---|---|---|---|
 | Marks | **8** — the average of both quizzes | **24** | **40** |
-| Time | ~10 minutes | 40 minutes | 60 minutes |
-| How | In Google Forms, choice questions, in English | Practical, on the computer | Practical, on the computer |
-| Which lessons | Quiz 1: lesson 5 · Quiz 2: lesson 6 | 1 – 4 | Word, PowerPoint and Gmail |
-| From this sheet | **most of it** | the lessons' tasks | the lessons' tasks |
+| Time | ~15 minutes, at the start of the lesson | 60 minutes, on a day of its own | 60 minutes, on a day of its own |
+| How | Online and hands-on: a Word file, tasks, and ticking the answer | Online and hands-on: a zip file of folders, tasks, and ticking the answer | Online and hands-on: a Word file and a PowerPoint file, tasks, and ticking the answer |
+| Which lessons | Quiz 1: lesson 5 · Quiz 2: lesson 6 | 1 – 4 | Word and PowerPoint |
+| From this sheet | the names of the buttons and keys | the names of the buttons and keys | the names of the buttons and keys |
 | Mock — not counted | end of lesson 3, in class | — | — |
 
-> **Read this sheet well** and you will pass the quizzes comfortably.
+> **Every paper is hands-on:** only a student who **did every lesson's
+> task with their own hands** does well.
 >
-> The midterm and the final are practical: only a student who **did every
-> lesson's task with their own hands** does well in them.
+> This sheet teaches you the names of the buttons and keys; the tasks teach
+> your hands.
 
 ---
 
 # The harder questions — how to prepare
 
-> **These questions are not on this sheet.** A few come up in the
-> quizzes, and memorising will not help — the situation will be different.
+> **These questions are not on this sheet.** They train the thinking the
+> hands-on tasks need: what happens, what went wrong, what you do. Memorising
+> will not help — the situation will be different.
 
 > But there are three kinds, and knowing the kind tells you how to think.
 > Each carries **two worked examples** with a full answer.

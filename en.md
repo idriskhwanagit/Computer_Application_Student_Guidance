@@ -20,13 +20,16 @@ have never touched a computer, this guide was written for you.
 |---|---|---|
 | Homework | 10 | The task at the end of each lesson |
 | Report | 16 | The final project: a report in Word and a presentation in PowerPoint |
-| Quizzes | 8 | Two short quizzes in Google Forms, in English |
-| Midterm | 24 | Practical, on the computer, in lesson 4 |
+| Quizzes | 8 | Two short hands-on quizzes in Google Forms, in English |
+| Midterm | 24 | Online and hands-on, on your laptop, on a separate day after lesson 4 |
 | Activity | 2 | Your work in class |
-| Final | 40 | Practical, on the computer, after lesson 7 |
+| Final | 40 | Online and hands-on, on your laptop, on a separate day after lesson 7 |
 | **Total** | **100** | |
 
-The mock quiz at the end of lesson 3 does not count: it is there so you try Google Forms.
+**How the papers work:** every paper comes with a file attached to the teacher's e-mail. You download
+it, do each task on your laptop, and tick what you see. Every paper is in English.
+
+The mock quiz at the end of lesson 3 does not count: it is there so you try a paper like this once.
 
 # Lesson 1 — The computer, and choosing a laptop
 
@@ -430,6 +433,19 @@ https://myaccount.google.com/security
 5. Click the 📎 **Attach files** icon → choose the file → **Open**.
 6. Wait until the file has finished uploading, then click **Send**.
 
+### Saving a file you received
+
+1. Open the e-mail. The attached files are at the bottom, under the message.
+2. Point at the file and click the **Download** arrow. It goes into the **Downloads** folder, and
+   [[Ctrl+J]] in Chrome lists it.
+
+### Opening a zip file
+
+A **zip** file holds several files and folders packed into one.
+
+1. In File Explorer, right-click the zip file → **Extract All** → **Extract**.
+2. A normal folder with the same name opens. Work in that folder, not inside the zip.
+
 ## 7. Signing out on a shared computer
 
 - **Sign out:** click your account picture in the top right corner → **Sign out**.
@@ -440,6 +456,9 @@ https://myaccount.google.com/security
 Send an e-mail to the teacher. Its subject should be "Lesson 3 — your name", with a file attached,
 for example the picture from the lesson 2 task.
 
+> **Mock quiz:** at the end of this lesson, in Google Forms and not marked: you try a hands-on paper,
+> with a file from the teacher's e-mail.
+
 ## Check yourself — lesson 3
 
 - [ ] I can connect to Wi-Fi
@@ -448,6 +467,7 @@ for example the picture from the lesson 2 task.
 - [ ] I know what to do if I forget my password
 - [ ] I can send an e-mail with an attachment
 - [ ] I can sign out on a shared computer
+- [ ] I can save an attachment and open a zip file
 
 # Lesson 4 — Windows settings
 
@@ -552,7 +572,7 @@ Copy, cut and paste were in lesson 2: [[Ctrl+C]], [[Ctrl+X]] and [[Ctrl+V]].
 2. Find your laptop's specifications and compare them with the laptop table of lesson 1.
 3. Take a screenshot of the About page and send it to the teacher by the university Gmail.
 
-> **Midterm:** in the last 40 minutes of this lesson there is a practical midterm, on lessons 1 to 4. It is worth 24 marks.
+> **Midterm:** on a separate day after this lesson, 60 minutes, on lessons 1 to 4: online, on your laptop, in English. It is worth 24 marks.
 
 ## Check yourself — lesson 4
 
@@ -639,7 +659,7 @@ on the right; look at them before printing.
 Write a simple CV for yourself: name, phone number, university e-mail, studies and skills. Make
 your name big and bold. Save it in your own folder, as Word and as PDF.
 
-> **Quiz 1:** at the start of lesson 6, on this lesson, in English.
+> **Quiz 1:** at the start of lesson 6, on this lesson: online, in English, on a Word file you download.
 
 ## Check yourself — lesson 5
 
@@ -694,7 +714,7 @@ Pane** you see them listed and reach each one with a click.
 Write a two-page report on "The parts of a computer": Heading 1 and Heading 2 headings, a table, a
 picture and page numbers. Save it as PDF and send it to the teacher by the university Gmail.
 
-> **Quiz 2:** at the start of lesson 7, on this lesson, in English.
+> **Quiz 2:** at the start of lesson 7, on this lesson: online, in English, on a Word file you download.
 
 ## Check yourself — lesson 6
 
@@ -768,8 +788,8 @@ This is homework: choose a subject, write a report on it in Word, build a presen
 PowerPoint, and send both files to the teacher by the university Gmail. It is your report mark:
 16 of the 100. The teacher gives the last day to send it.
 
-> **Final:** practical, on the computer: you do a task in Word and PowerPoint and send it by the
-> university Gmail.
+> **Final:** on a separate day after this lesson, 60 minutes: online, on your laptop, in English, on a
+> Word file and a PowerPoint file. It is worth 40 marks.
 
 ## Check yourself — lesson 7
 
