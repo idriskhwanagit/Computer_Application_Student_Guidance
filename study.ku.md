@@ -1,932 +1,735 @@
-# پرسیار و وەڵام — ئامادەکردنی مامۆستا ادریس قادر
+# Questions and Answers — Prepared by M. Idris Qadir
 
-> **ئەم ورقەیە بۆ خوێندنەوەیە.** پەڕەکانی تاقیکردنەوە کردارین: فایلێک دادەبەزێنیت،
-> کارەکان لەسەر لاپتۆپەکەت دەکەیت و ئەوەی دەیبینیت تیک دەکەیت. ئەم پرسیارانە فێرت
-> دەکەن هەر دوگمە و کلیلێک چی دەکات — ئەوەی ئەو کارانە پێویستیان پێیەتی.
+> **This sheet is for revision.** The papers are hands-on: you download a file,
+> do the tasks on your laptop and tick what you see. These questions teach you
+> what each button and key does — which is what the tasks need.
 
-> ورقەکە بە هەردوو زمانە بۆ ئەوەی لێی تێبگەیت، بەڵام **پەڕەکان تەنها بە ئینگلیزین**
-> — بۆیە ڕستە ئینگلیزییەکانی ژێر هەر پرسیارێکیش بخوێنەوە. ناوی دوگمە و کلیلەکان بە
-> ئینگلیزی دەمێننەوە، چونکە لەسەر شاشەکە بەو شێوەیە دەردەکەون.
+> **The papers are in English only**, so this sheet is too: reading it is
+> already practice for them. Button and key names stay in English, as they
+> appear on the screen. The Kurdish for each word is in your guide, in
+> brackets beside it, and on the words sheet your teacher prints for you.
 
-> باشترین ئامادەکاری: ئەرکی هەموو وانەکان بە دەستی خۆت بکە. لە کۆتایی ئەم ورقەیەدا
-> ڕوونکراوەتەوە کە چی چاوەڕێت دەکات.
+> The best preparation: do every lesson's task with your own hands. The last
+> page says what to expect.
 
-> **نمرەکان:** ئەرکی ماڵ **10** · ڕاپۆرت **16** · کویز **8** (تێکڕای هەردوو کویز) · میدتێرم **24** · چالاکی **2** · فاینەل **40** — کۆ **100**.
+> **Marks:** homework **10** · report **16** · quiz **8** (the average of both quizzes) · midterm **24** · activity **2** · final **40** — total **100**.
 
-> **مۆک:** لە کۆتایی وانەی 3 کویزێکی مۆک دەکرێت. نمرەکەی ناژمێردرێت — بۆ ئەوەیە یەک جار پەڕەیەکی کرداری تاقی بکەیتەوە: فایلێک لە ئیمەیلەکەوە، و کارەکان لەسەری.
-
----
-
-## وانەی 1 — کۆمپیوتەر و هەڵبژاردنی لاپتۆپ
-
-**1.** کام پارچە مێشکی کۆمپیوتەرە و هەموو کارێک دەکات؟
-
-@en Which part is the computer's brain and does every job?
-
-> **وەڵام:** پرۆسێسەر
-> 
-> پرۆسێسەر (CPU) هەموو کارێک دەکات.
-
-**2.** کاتێک کۆمپیوتەر دەکوژێنیتەوە، کام پارچە بەتاڵ دەبێتەوە؟
-
-@en When you shut the computer down, which part is emptied?
-
-> **وەڵام:** ڕام
-> 
-> ڕام وەک مێزی کارکردن وایە؛ فایلەکان لە SSD دا دەمێننەوە.
-
-**3.** فایلەکانت لە کوێ دەمێننەوە کاتێک کۆمپیوتەر کوژاوەتەوە؟
-
-@en Where do your files stay while the computer is off?
-
-> **وەڵام:** بیرگە (SSD)
-> 
-> بیرگە کەنتۆری فایلەکانە.
-
-**4.** کامیان خێراترە؟
-
-@en Which is faster?
-
-> **وەڵام:** SSD
-> 
-> SSD زۆر خێراترە لە هاردی کۆن.
-
-**5.** بۆ بەستنەوەی پرۆجێکتەر کام پۆرت بەکاردێت؟
-
-@en Which port connects a projector?
-
-> **وەڵام:** HDMI
-> 
-> HDMI بۆ شاشەی گەورە و پرۆجێکتەرە.
-
-**6.** فلاشمێموری بە کام پۆرت دەبەسترێت؟
-
-@en Which port does a flash drive go into?
-
-> **وەڵام:** USB
-> 
-> فلاش، ماوس و چاپکەر بە USB دەبەسترێن.
-
-**7.** پرۆسێسەری i5-7200U نەوەی چەندە؟
-
-@en Which generation is an i5-7200U processor?
-
-> **وەڵام:** 7
-> 
-> ژمارەکە بە 1 دەست پێ ناکات، بۆیە یەکەم ژمارە نەوەکەیە.
-
-**8.** پرۆسێسەری i5-1135G7 نەوەی چەندە؟
-
-@en Which generation is an i5-1135G7 processor?
-
-> **وەڵام:** 11
-> 
-> بە 1 دەست پێ دەکات، بۆیە دوو ژمارەی یەکەم نەوەکەیە.
-
-**9.** بۆ ویندۆز 11، پرۆسێسەری Intel نابێت لە کام نەوە کەمتر بێت؟
-
-@en For Windows 11, an Intel processor must be at least which generation?
-
-> **وەڵام:** 8
-> 
-> Intel نەوەی 8 یان نوێتر.
-
-**10.** بۆ لاپتۆپی قوتابی چەند ڕام پێشنیار کراوە؟
-
-@en How much RAM is advised for a student's laptop?
-
-> **وەڵام:** 8 GB یان 16 GB
-> 
-> خشتەی لاپتۆپی وانەی 1: 8 GB یان 16 GB.
-
-**11.** بۆ کوژاندنەوەی دروستی کۆمپیوتەر چی دەکەیت؟
-
-@en How do you shut the computer down properly?
-
-> **وەڵام:** لە Start، Power و پاشان Shut down
-> 
-> دوگمەی داگیرساندن تەنها کاتێک ڕادەگیرێت کە کۆمپیوتەر بە تەواوی وەستابێت.
-
-**12.** دوو کلیک بۆ چییە؟
-
-@en What is a double-click for?
-
-> **وەڵام:** کردنەوەی فایل یان بەرنامە
-> 
-> یەک کلیک هەڵدەبژێرێت، دوو کلیک دەکاتەوە.
-
-**13.** کلیکی ڕاست چی دەکاتەوە؟
-
-@en What does a right-click open?
-
-> **وەڵام:** مێنیوویەک
-> 
-> کلیکی ڕاست مێنیوویەک بۆ ئەو شتە دەکاتەوە.
-
-**14.** بۆ نووسینی پیتی گەورە (A) چی دەکەیت؟
-
-@en How do you type a capital letter (A)?
-
-> **وەڵام:** دەست لەسەر دوگمەی Shift دادەنێیت و A دادەگریت
-> 
-> Shift و پیتەکە لە هەمان کاتدا.
-
-**15.** کام کلیل پیتی پێش کورسەر دەسڕێتەوە؟
-
-@en Which key deletes the letter before the cursor?
-
-> **وەڵام:** Backspace
-> 
-> Backspace پێش کورسەر، Delete دوای کورسەر.
-
-**16.** سێ پارچەی ناوەوەی لاپتۆپ بنووسە.
-
-@en Name the three parts inside a laptop.
-
-> **وەڵام:** پرۆسێسەر، ڕام و بیرگە (SSD)
+> **Mock:** at the end of lesson 3 there is a mock quiz. Its mark does not count — it is there so you try a hands-on paper once: a file from the e-mail, and tasks on it.
 
 ---
 
-## وانەی 2 — ویندۆز و فایلەکان
+## Lesson 1 — The computer, and choosing a laptop
 
-**1.** دوگمەی Start لە کوێیە؟
+**1.** Which part is the computer's brain and does every job?
 
-@en Where is the Start button?
-
-> **وەڵام:** لە شریتی Taskbar
+> **Answer:** The processor
 > 
-> لە شریتی خوارەوەی شاشە.
+> The processor (CPU) does every job.
 
-**2.** دوگمەی Minimize (—) چی دەکات؟
+**2.** When you shut the computer down, which part is emptied?
 
-@en What does the Minimize button (—) do?
-
-> **وەڵام:** پەنجەرەکە دەشارێتەوە بۆ Taskbar
+> **Answer:** The RAM
 > 
-> بەرنامەکە کراوە دەمێنێت؛ لە Taskbar دەگەڕێتەوە.
+> RAM is the work desk; the files stay on the SSD.
 
-**3.** بۆ گۆڕین لە نێوان پەنجەرەکاندا کام کلیلانە؟
+**3.** Where do your files stay while the computer is off?
 
-@en Which keys switch between windows?
-
-> **وەڵام:** Alt + Tab
+> **Answer:** The storage (SSD)
 > 
-> دەست لەسەر Alt دادەنێیت و Tab دادەگریت.
+> Storage is the cupboard for the files.
 
-**4.** بۆ کردنەوەی File Explorer کام کلیلانە؟
+**4.** Which is faster?
 
-@en Which keys open File Explorer?
-
-> **وەڵام:** Win + E
+> **Answer:** An SSD
 > 
-> E بۆ Explorer.
+> An SSD is much faster than an old hard disk.
 
-**5.** فۆڵدەر چییە؟
+**5.** Which port connects a projector?
 
-@en What is a folder?
-
-> **وەڵام:** شوێنێک بۆ ڕێکخستنی فایلەکان
+> **Answer:** HDMI
 > 
-> وەک جانتایەک بۆ فایلەکان.
+> HDMI is for a big screen or a projector.
 
-**6.** بۆ ناوگۆڕینی فایلێکی هەڵبژێردراو کام کلیل؟
+**6.** Which port does a flash drive go into?
 
-@en Which key renames the selected file?
-
-> **وەڵام:** F2
+> **Answer:** USB
 > 
-> F2، پاشان ناوی نوێ و Enter.
+> Flash drives, mice and printers plug into USB.
 
-**7.** فایلێکی سڕاوە لە کوێ دەدۆزیتەوە؟
+**7.** Which generation is an i5-7200U processor?
 
-@en Where do you find a deleted file?
-
-> **وەڵام:** Recycle Bin
+> **Answer:** 7
 > 
-> لەوێوە بە Restore دەگەڕێتەوە.
+> The number does not start with 1, so its first digit is the generation.
 
-**8.** کۆپیکردن بە کیبۆرد؟
+**8.** Which generation is an i5-1135G7 processor?
 
-@en Copying with the keyboard?
-
-> **وەڵام:** Ctrl + C
+> **Answer:** 11
 > 
-> C بۆ Copy.
+> It starts with 1, so its first two digits are the generation.
 
-**9.** پەیستکردن بە کیبۆرد؟
+**9.** For Windows 11, an Intel processor must be at least which generation?
 
-@en Pasting with the keyboard?
+> **Answer:** 8
+> 
+> Intel 8th generation or newer.
 
-> **وەڵام:** Ctrl + V
+**10.** How much RAM is advised for a student's laptop?
+
+> **Answer:** 8 GB or 16 GB
+> 
+> The laptop table of lesson 1: 8 GB or 16 GB.
+
+**11.** How do you shut the computer down properly?
+
+> **Answer:** Start, then Power, then Shut down
+> 
+> The power button is held only when the computer has frozen completely.
+
+**12.** What is a double-click for?
+
+> **Answer:** Opening a file or a program
+> 
+> One click selects, a double-click opens.
+
+**13.** What does a right-click open?
+
+> **Answer:** A menu
+> 
+> A right-click opens a menu for that thing.
+
+**14.** How do you type a capital letter (A)?
+
+> **Answer:** Keep your finger on Shift and press A
+> 
+> Shift and the letter at the same time.
+
+**15.** Which key deletes the letter before the cursor?
+
+> **Answer:** Backspace
+> 
+> Backspace before the cursor, Delete after it.
+
+**16.** Name the three parts inside a laptop.
+
+> **Answer:** The processor, the RAM and the storage (SSD)
+
+---
+
+## Lesson 2 — Windows and files
+
+**1.** Where is the Start button?
+
+> **Answer:** On the taskbar
+> 
+> On the bar at the bottom of the screen.
+
+**2.** What does the Minimize button (—) do?
+
+> **Answer:** Hides the window in the taskbar
+> 
+> The program stays open; it comes back from the taskbar.
+
+**3.** Which keys switch between windows?
+
+> **Answer:** Alt + Tab
+> 
+> Keep your finger on Alt and press Tab.
+
+**4.** Which keys open File Explorer?
+
+> **Answer:** Win + E
+> 
+> E for Explorer.
+
+**5.** What is a folder?
+
+> **Answer:** A place to keep files in order
+> 
+> Like a bag for the files.
+
+**6.** Which key renames the selected file?
+
+> **Answer:** F2
+> 
+> F2, then the new name and Enter.
+
+**7.** Where do you find a deleted file?
+
+> **Answer:** The Recycle Bin
+> 
+> From there Restore brings it back.
+
+**8.** Copying with the keyboard?
+
+> **Answer:** Ctrl + C
+> 
+> C for Copy.
+
+**9.** Pasting with the keyboard?
+
+> **Answer:** Ctrl + V
 > 
 > Ctrl + V.
 
-**10.** جیاوازی Cut و Copy چییە؟
+**10.** What is the difference between Cut and Copy?
 
-@en What is the difference between Cut and Copy?
-
-> **وەڵام:** Cut فایلەکە دەگوازێتەوە؛ Copy لە شوێنی خۆی دەیهێڵێتەوە
+> **Answer:** Cut moves the file; Copy leaves it where it is
 > 
-> دوای Paste، Cut فایلەکە لە شوێنی کۆن نامێنێت.
+> After Paste, a cut file is no longer in its old place.
 
-**11.** فلاش لە File Explorer لە کوێ دەردەکەوێت؟
+**11.** Where does a flash drive appear in File Explorer?
 
-@en Where does a flash drive appear in File Explorer?
-
-> **وەڵام:** This PC
+> **Answer:** This PC
 > 
-> لە تەنیشت دیسکەکانەوە.
+> Next to the drives.
 
-**12.** پێش دەرهێنانی فلاش چی دەکەیت؟
+**12.** What do you do before pulling out a flash drive?
 
-@en What do you do before pulling out a flash drive?
-
-> **وەڵام:** کلیکی ڕاست لە فلاشەکە و Eject
+> **Answer:** Right-click the flash drive and Eject
 > 
-> دەرهێنانی بە سەلامەتی.
+> Removing it safely.
 
-**13.** بۆ هەڵبژاردنی هەموو فایلەکانی فۆڵدەرێک؟
+**13.** To select every file in a folder?
 
-@en To select every file in a folder?
-
-> **وەڵام:** Ctrl + A
+> **Answer:** Ctrl + A
 > 
-> A بۆ All.
+> A for All.
 
-**14.** کلیلەکانی کۆپی، بڕین و پەیست بنووسە.
+**14.** Write the keys for copy, cut and paste.
 
-@en Write the keys for copy, cut and paste.
-
-> **وەڵام:** Ctrl + C، Ctrl + X و Ctrl + V
+> **Answer:** Ctrl + C, Ctrl + X and Ctrl + V
 
 ---
 
-## وانەی 3 — ئینتەرنێت و جیمەیلی زانکۆ
+## Lesson 3 — The internet and the university Gmail
 
-**1.** ئیمەیلی زانکۆکەت بە چی کۆتایی دێت؟
+**1.** What does your university e-mail end with?
 
-@en What does your university e-mail end with?
-
-> **وەڵام:** @epu.edu.iq
+> **Answer:** @epu.edu.iq
 > 
-> ئیمەیلی زانکۆی پۆلیتەکنیکی هەولێر.
+> The Erbil Polytechnic University address.
 
-**2.** ناونیشانی ماڵپەڕ لە Chrome لە کوێ دەنووسیت؟
+**2.** Where do you type a website's address in Chrome?
 
-@en Where do you type a website's address in Chrome?
-
-> **وەڵام:** شریتی ناونیشان
+> **Answer:** The address bar
 > 
-> شریتی سەرەوەی پەنجەرەکە.
+> The bar at the top of the window.
 
-**3.** تابێکی نوێ لە Chrome؟
+**3.** A new tab in Chrome?
 
-@en A new tab in Chrome?
-
-> **وەڵام:** Ctrl + T
+> **Answer:** Ctrl + T
 > 
-> T بۆ Tab؛ Ctrl + W دایدەخات.
+> T for Tab; Ctrl + W closes it.
 
-**4.** فایلە داگیراوەکان دەچنە کام فۆڵدەر؟
+**4.** Which folder do downloaded files go into?
 
-@en Which folder do downloaded files go into?
-
-> **وەڵام:** Downloads
+> **Answer:** Downloads
 > 
-> Ctrl + J لیستیان پیشان دەدات.
+> Ctrl + J lists them.
 
-**5.** ئەگەر پاسۆردەکەت لەبیر چوو، لە پەڕەی چوونەژوورەوە کلیک لە چی دەکەیت؟
+**5.** If you forget your password, what do you click on the sign-in page?
 
-@en If you forget your password, what do you click on the sign-in page?
-
-> **وەڵام:** Forgot password?
+> **Answer:** Forgot password?
 > 
-> پاشان کۆدێک بۆ مۆبایل یان ئیمەیلی گەڕاندنەوە دێت.
+> A code then comes to the recovery phone or e-mail.
 
-**6.** ژمارەی مۆبایل و ئیمەیلی گەڕاندنەوە بۆ چییە؟
+**6.** What are a recovery phone number and e-mail for?
 
-@en What are a recovery phone number and e-mail for?
-
-> **وەڵام:** بۆ گەڕاندنەوەی ئەکاونت کاتێک پاسۆرد لەبیر دەچێت
+> **Answer:** For getting the account back when the password is forgotten
 > 
-> Google کۆدێکیان بۆ دەنێرێت.
+> Google sends them a code.
 
-**7.** ئەگەر Forgot password کاری نەکرد، بۆ لای کێ دەچیت؟
+**7.** If Forgot password does not work, whom do you go to?
 
-@en If Forgot password does not work, whom do you go to?
-
-> **وەڵام:** ئەو بەشەی پەیمانگە کە ئەکاونتەکەی دا
+> **Answer:** The office of the institute that gave the account
 > 
-> ئەکاونتی زانکۆ لە لایەن زانکۆوە بەڕێوە دەبرێت.
+> A university account is managed by the university.
 
-**8.** بۆ نووسینی ئیمەیلی نوێ لە جیمەیل کلیک لە چی دەکەیت؟
+**8.** To write a new e-mail in Gmail, what do you click?
 
-@en To write a new e-mail in Gmail, what do you click?
-
-> **وەڵام:** Compose
+> **Answer:** Compose
 > 
-> لە سەرەوەی لای چەپ.
+> At the top left.
 
-**9.** فایل لەگەڵ ئیمەیل بە چی دەنێردرێت؟
+**9.** How is a file sent with an e-mail?
 
-@en How is a file sent with an e-mail?
-
-> **وەڵام:** 📎 Attach files
+> **Answer:** 📎 Attach files
 > 
-> وێنۆچکەی 📎.
+> The 📎 icon.
 
-**10.** لە کۆمپیوتەری هاوبەش، کاتێک Chrome دەپرسێت Save password?، چی هەڵدەبژێریت؟
+**10.** On a shared computer, when Chrome asks Save password?, what do you choose?
 
-@en On a shared computer, when Chrome asks Save password?, what do you choose?
-
-> **وەڵام:** Never
+> **Answer:** Never
 > 
-> کەسی دوای تۆ نابێت بچێتە ناو ئەکاونتەکەت.
+> The next person must not get into your account.
 
-**11.** پاسۆردێکی باش چۆنە؟
+**11.** What is a good password like?
 
-@en What is a good password like?
-
-> **وەڵام:** لانیکەم 8 پیت، تێکەڵێک لە پیت و ژمارە
+> **Answer:** At least 8 characters, letters and numbers mixed
 > 
-> بە کەسی مەڵێ.
+> Tell nobody.
 
-**12.** لە پاسۆرددا A و a ...
+**12.** In a password, A and a are…
 
-@en In a password, A and a are…
-
-> **وەڵام:** جیاوازن
+> **Answer:** different
 > 
-> پیتی گەورە و بچووک جیان.
+> Capitals and small letters differ.
 
-**13.** دوو شت بنووسە کە دوای بەکارهێنانی جیمەیل لە کۆمپیوتەری هاوبەشدا دەیکەیت.
+**13.** Write two things you do after using Gmail on a shared computer.
 
-@en Write two things you do after using Gmail on a shared computer.
-
-> **وەڵام:** Sign out دەکەم، و پاسۆرد پاشەکەوت ناکەم (Never)
+> **Answer:** Sign out, and do not save the password (Never)
 
 ---
 
-## وانەی 4 — ڕێکخستنەکانی ویندۆز
+## Lesson 4 — Windows settings
 
-**1.** بۆ کردنەوەی Settings کام کلیلانە؟
+**1.** Which keys open Settings?
 
-@en Which keys open Settings?
-
-> **وەڵام:** Win + I
+> **Answer:** Win + I
 > 
-> یان Start و پاشان Settings.
+> Or Start, then Settings.
 
-**2.** زمانی کوردی لە کام بەشی Settings زیاد دەکرێت؟
+**2.** In which part of Settings is Kurdish added?
 
-@en In which part of Settings is Kurdish added?
-
-> **وەڵام:** Time & language
+> **Answer:** Time & language
 > 
-> Language & region، پاشان Add a language.
+> Language & region, then Add a language.
 
-**3.** کام زمان هەڵدەبژێریت بۆ نووسینی کوردیی سۆرانی؟
+**3.** Which language do you choose to type Sorani Kurdish?
 
-@en Which language do you choose to type Sorani Kurdish?
-
-> **وەڵام:** Central Kurdish
+> **Answer:** Central Kurdish
 > 
-> Central Kurdish = کوردیی ناوەندی.
+> Central Kurdish = Sorani.
 
-**4.** گۆڕینی زمانی کیبۆرد؟
+**4.** Switching the keyboard language?
 
-@en Switching the keyboard language?
-
-> **وەڵام:** Win + Space
+> **Answer:** Win + Space
 > 
-> یان Alt + Shift.
+> Or Alt + Shift.
 
-**5.** Scale لە Display چی دەگۆڕێت؟
+**5.** What does Scale in Display change?
 
-@en What does Scale in Display change?
-
-> **وەڵام:** قەبارەی نووسین و وێنۆچکەکان
+> **Answer:** The size of text and icons
 > 
-> ئەگەر نووسینەکان بچووکن، گەورەتری بکە.
+> If the text is small, make it bigger.
 
-**6.** Time zone ی هەرێمی کوردستان کامەیە؟
+**6.** Which is the Kurdistan Region's time zone?
 
-@en Which is the Kurdistan Region's time zone?
-
-> **وەڵام:** (UTC+03:00) Baghdad
+> **Answer:** (UTC+03:00) Baghdad
 > 
 > Baghdad.
 
-**7.** بەرنامە لە کوێوە لادەبرێت؟
+**7.** Where is a program removed?
 
-@en Where is a program removed?
-
-> **وەڵام:** لە Installed apps ی Settings
+> **Answer:** In Installed apps, in Settings
 > 
-> دوگمەی … و پاشان Uninstall.
+> The … button, then Uninstall.
 
-**8.** بەرنامە لە کوێوە دادەمەزرێنیت؟
+**8.** Where do you install a program from?
 
-@en Where do you install a program from?
-
-> **وەڵام:** Microsoft Store یان ماڵپەڕی فەرمیی بەرنامەکە
+> **Answer:** The Microsoft Store or the program's official website
 > 
-> ڤایرۆس زۆرجار لە ماڵپەڕی نەناسراوەوە دێت.
+> Viruses often come from unknown websites.
 
-**9.** تایبەتمەندییەکانی لاپتۆپ لە کوێ دەبینیت؟
+**9.** Where do you see the laptop's specifications?
 
-@en Where do you see the laptop's specifications?
-
-> **وەڵام:** About لە System
+> **Answer:** About, under System
 > 
-> Settings، System، About.
+> Settings, System, About.
 
-**10.** Ctrl + Z چی دەکات؟
+**10.** What does Ctrl + Z do?
 
-@en What does Ctrl + Z do?
-
-> **وەڵام:** دوایین کار هەڵدەوەشێنێتەوە
+> **Answer:** Undoes the last action
 > 
 > Undo.
 
-**11.** Win + D چی دەکات؟
+**11.** What does Win + D do?
 
-@en What does Win + D do?
-
-> **وەڵام:** دێسکتۆپ پیشان دەدات
+> **Answer:** Shows the desktop
 > 
-> D بۆ Desktop.
+> D for Desktop.
 
-**12.** وێنەگرتنی شاشە؟
+**12.** Taking a screenshot?
 
-@en Taking a screenshot?
-
-> **وەڵام:** Win + Shift + S
+> **Answer:** Win + Shift + S
 > 
-> وێنەکە کۆپی دەبێت و لە Pictures ← Screenshots یش پاشەکەوت دەبێت.
+> The picture is copied, and saved in Pictures → Screenshots too.
 
-**13.** دوو ڕێگا بنووسە بۆ گۆڕینی زمانی کیبۆرد.
+**13.** Write two ways to switch the keyboard language.
 
-@en Write two ways to switch the keyboard language.
-
-> **وەڵام:** Win + Space یان Alt + Shift، یان کلیک لە زمانەکە لە Taskbar
+> **Answer:** Win + Space or Alt + Shift, or clicking the language on the taskbar
 
 ---
 
-## وانەی 5 — Word، بەشی یەکەم
+## Lesson 5 — Word, part 1
 
-**1.** پیتی ئەستوور (Bold)؟
+**1.** Bold?
 
-@en Bold?
-
-> **وەڵام:** Ctrl + B
+> **Answer:** Ctrl + B
 > 
-> B بۆ Bold.
+> B for Bold.
 
-**2.** پیتی لار (Italic)؟
+**2.** Italic?
 
-@en Italic?
-
-> **وەڵام:** Ctrl + I
+> **Answer:** Ctrl + I
 > 
-> I بۆ Italic.
+> I for Italic.
 
-**3.** هێڵ بەژێردا (Underline)؟
+**3.** Underline?
 
-@en Underline?
-
-> **وەڵام:** Ctrl + U
+> **Answer:** Ctrl + U
 > 
-> U بۆ Underline.
+> U for Underline.
 
-**4.** ناوەڕاستکردنی پەرەگراف؟
+**4.** Centring a paragraph?
 
-@en Centring a paragraph?
-
-> **وەڵام:** Ctrl + E
+> **Answer:** Ctrl + E
 > 
-> Ctrl + C کۆپییە، نەک ناوەڕاست.
+> Ctrl + C is copy, not centre.
 
-**5.** ڕێکخستنی پەرەگراف بۆ لای ڕاست؟
+**5.** Aligning a paragraph to the right?
 
-@en Aligning a paragraph to the right?
-
-> **وەڵام:** Ctrl + R
+> **Answer:** Ctrl + R
 > 
-> R بۆ Right.
+> R for Right.
 
-**6.** ڕێکخستنی پەرەگراف لە هەردوولاوە (Justify)؟
+**6.** Justifying a paragraph (both sides)?
 
-@en Justifying a paragraph (both sides)?
-
-> **وەڵام:** Ctrl + J
+> **Answer:** Ctrl + J
 > 
-> J بۆ Justify.
+> J for Justify.
 
-**7.** بۆ دێڕێکی کوردی کام دوگمە دەگریت؟
+**7.** Which button do you press for a Kurdish line?
 
-@en Which button do you press for a Kurdish line?
-
-> **وەڵام:** Right-to-Left
+> **Answer:** Right-to-Left
 > 
-> دێڕەکە لە لای ڕاستەوە دەست پێ دەکات.
+> The line then starts from the right.
 
-**8.** پێش گۆڕینی فۆنتی دەقێک، یەکەم چی دەکەیت؟
+**8.** Before changing the font of some text, what do you do first?
 
-@en Before changing the font of some text, what do you do first?
-
-> **وەڵام:** دەقەکە هەڵدەبژێریت
+> **Answer:** Select the text
 > 
-> دوگمەکان تەنها لەسەر دەقی هەڵبژێردراو کار دەکەن.
+> The buttons work only on selected text.
 
-**9.** هەڵبژاردنی هەموو دەقەکە؟
+**9.** Selecting all the text?
 
-@en Selecting all the text?
-
-> **وەڵام:** Ctrl + A
+> **Answer:** Ctrl + A
 > 
-> A بۆ All.
+> A for All.
 
-**10.** پاشەکەوتکردن لە Word؟
+**10.** Saving in Word?
 
-@en Saving in Word?
-
-> **وەڵام:** Ctrl + S
+> **Answer:** Ctrl + S
 > 
-> S بۆ Save.
+> S for Save.
 
-**11.** چاپکردن؟
+**11.** Printing?
 
-@en Printing?
-
-> **وەڵام:** Ctrl + P
+> **Answer:** Ctrl + P
 > 
-> P بۆ Print.
+> P for Print.
 
-**12.** بۆ پاشەکەوتکردن وەک PDF، لە Save As چی دەگۆڕیت؟
+**12.** To save as PDF, what do you change in Save As?
 
-@en To save as PDF, what do you change in Save As?
-
-> **وەڵام:** Save as type
+> **Answer:** Save as type
 > 
 > Save as type = PDF.
 
-**13.** بۆچی فایل وەک PDF دەنێریت؟
+**13.** Why send a file as a PDF?
 
-@en Why send a file as a PDF?
-
-> **وەڵام:** لە هەموو ئامێرێکدا وەک یەک دەردەکەوێت
+> **Answer:** It looks the same on every device
 > 
-> و بە ئاسانی ناگۆڕدرێت.
+> And it is not easily changed.
 
-**14.** فۆنتێکی باش بۆ دەقی کوردی؟
+**14.** A good font for Kurdish text?
 
-@en A good font for Kurdish text?
-
-> **وەڵام:** Segoe UI
+> **Answer:** Segoe UI
 > 
-> هەموو پیتە کوردییەکانی تێدایە؛ ئەوانی تر وێنۆچکەن.
+> It has every Kurdish letter; the others are symbols.
 
-**15.** پەرەگرافی نوێ؟
+**15.** A new paragraph?
 
-@en A new paragraph?
-
-> **وەڵام:** Enter
+> **Answer:** Enter
 > 
 > Enter.
 
-**16.** بۆشایی نێوان دێڕەکان لە کام دوگمەدایە؟
+**16.** Which button sets the space between lines?
 
-@en Which button sets the space between lines?
-
-> **وەڵام:** Line and Paragraph Spacing
+> **Answer:** Line and Paragraph Spacing
 > 
-> لە تەنیشت دوگمەکانی ڕێکخستن؛ 1.0 یان 1.5.
+> Next to the alignment buttons; 1.0 or 1.5.
 
-**17.** کلیلەکانی Bold و Italic و Underline بنووسە.
+**17.** Write the keys for bold, italic and underline.
 
-@en Write the keys for bold, italic and underline.
-
-> **وەڵام:** Ctrl + B، Ctrl + I و Ctrl + U
+> **Answer:** Ctrl + B, Ctrl + I and Ctrl + U
 
 ---
 
-## وانەی 6 — Word، بەشی دووەم
+## Lesson 6 — Word, part 2
 
-**1.** سەردێڕی سەرەکی کام Style ە؟
+**1.** Which style is a main heading?
 
-@en Which style is a main heading?
-
-> **وەڵام:** Heading 1
+> **Answer:** Heading 1
 > 
-> Heading 2 بۆ سەردێڕی لاوەکی.
+> Heading 2 is for a smaller heading.
 
-**2.** سەردێڕی لاوەکی کام Style ە؟
+**2.** Which style is a smaller heading?
 
-@en Which style is a smaller heading?
-
-> **وەڵام:** Heading 2
+> **Answer:** Heading 2
 > 
-> لە ژێر Heading 1 دا.
+> Under a Heading 1.
 
-**3.** سەردێڕەکان لە کوێ وەک لیست دەبینیت؟
+**3.** Where do you see the headings as a list?
 
-@en Where do you see the headings as a list?
-
-> **وەڵام:** Navigation Pane لە View
+> **Answer:** Navigation Pane, under View
 > 
-> بە کلیکێک دەچیتە سەر هەر سەردێڕێک.
+> One click takes you to any heading.
 
-**4.** خشتە لە کام تابدایە؟
+**4.** Which tab has Table?
 
-@en Which tab has Table?
-
-> **وەڵام:** Insert
+> **Answer:** Insert
 > 
-> Insert، پاشان Table.
+> Insert, then Table.
 
-**5.** لە خشتەدا بۆ چوون بۆ خانەی داهاتوو؟
+**5.** In a table, how do you go to the next cell?
 
-@en In a table, how do you go to the next cell?
-
-> **وەڵام:** Tab
+> **Answer:** Tab
 > 
-> Enter دێڕێکی نوێ لە ناو هەمان خانەدا دروست دەکات.
+> Enter makes a new line inside the same cell.
 
-**6.** وێنە لە کوێوە زیاد دەکەیت؟
+**6.** Where do you add a picture from?
 
-@en Where do you add a picture from?
-
-> **وەڵام:** Pictures لە Insert
+> **Answer:** Pictures, under Insert
 > 
-> پاشان This Device.
+> Then This Device.
 
-**7.** ژمارەی پەڕە لە کوێوە زیاد دەکەیت؟
+**7.** Where do you add page numbers?
 
-@en Where do you add page numbers?
-
-> **وەڵام:** Page Number لە Insert
+> **Answer:** Page Number, under Insert
 > 
-> پاشان Bottom of Page.
+> Then Bottom of Page.
 
-**8.** Header چییە؟
+**8.** What is a header?
 
-@en What is a header?
-
-> **وەڵام:** نووسینێک لە سەرەوەی هەموو پەڕەکان
+> **Answer:** A line at the top of every page
 > 
-> Footer لە خوارەوەیە.
+> A footer is at the bottom.
 
-**9.** لێوارەکان (Margins) لە کام تابدان؟
+**9.** Which tab has Margins?
 
-@en Which tab has Margins?
-
-> **وەڵام:** Layout
+> **Answer:** Layout
 > 
-> لەگەڵ Orientation و Size.
+> With Orientation and Size.
 
-**10.** پەڕەی پان (Landscape) لە کوێوە دادەنرێت؟
+**10.** Where is a wide page (Landscape) set?
 
-@en Where is a wide page (Landscape) set?
-
-> **وەڵام:** Orientation
+> **Answer:** Orientation
 > 
-> Portrait بۆ پەڕەی درێژ.
+> Portrait is for a tall page.
 
-**11.** قەبارەی پەڕەی باو لە کوردستان؟
+**11.** The usual paper size in Kurdistan?
 
-@en The usual paper size in Kurdistan?
-
-> **وەڵام:** A4
+> **Answer:** A4
 > 
 > A4.
 
-**12.** بۆ گەورەکردنی وێنەیەک لە Word؟
+**12.** How do you make a picture bigger in Word?
 
-@en How do you make a picture bigger in Word?
-
-> **وەڵام:** گۆشەیەکی ڕادەکێشیت
+> **Answer:** Drag a corner
 > 
-> گۆشەکە، نەک لای ناوەڕاست، تا شێوەکەی نەگۆڕێت.
+> A corner, not a middle edge, so its shape stays.
 
-**13.** پێش ناردنی ڕاپۆرت بە جیمەیل، باشترە بیکەیت بە…
+**13.** Before e-mailing a report, it is better to turn it into…
 
-@en Before e-mailing a report, it is better to turn it into…
-
-> **وەڵام:** PDF
+> **Answer:** a PDF
 > 
-> وەک وانەی 5.
+> As in lesson 5.
 
-**14.** خشتەیەکی 3 ستوون و 4 ڕیز چۆن دروست دەکەیت؟
+**14.** How do you make a table of 3 columns and 4 rows?
 
-@en How do you make a table of 3 columns and 4 rows?
-
-> **وەڵام:** لە Insert و پاشان Table، ماوسەکە بەسەر 3 × 4 چوارگۆشەدا دەجوڵێنیت و کلیک دەکەیت
+> **Answer:** In Insert → Table, move the mouse over 3 × 4 squares and click
 > 
-> ستوون پان، ڕیز درێژ.
+> Columns across, rows down.
 
-**15.** ژمارەی پەڕەت بە Bottom of Page زیاد کرد. ژمارەکان لە کوێ دەردەکەون؟
+**15.** You added page numbers with Bottom of Page. Where do the numbers appear?
 
-@en You added page numbers with Bottom of Page. Where do the numbers appear?
-
-> **وەڵام:** لە خوارەوەی هەموو پەڕەکان
+> **Answer:** At the bottom of every page
 > 
-> ژمارەی پەڕە لە Footer دایە و لە هەموو پەڕەکان دووبارە دەبێتەوە.
+> A page number lives in the footer and repeats on every page.
 
-**16.** سێ شت بنووسە کە لە تابی Layout ڕێک دەخرێن.
+**16.** Write three things set in the Layout tab.
 
-@en Write three things set in the Layout tab.
-
-> **وەڵام:** Margins، Orientation و Size
+> **Answer:** Margins, Orientation and Size
 
 ---
 
-## وانەی 7 — PowerPoint
+## Lesson 7 — PowerPoint
 
-**1.** سلایدی نوێ؟
+**1.** A new slide?
 
-@en A new slide?
-
-> **وەڵام:** New Slide
+> **Answer:** New Slide
 > 
-> لە تابی Home.
+> On the Home tab.
 
-**2.** شێوەی سلایدێک (سەردێڕ، یان سەردێڕ و دەق) لە کوێ دەگۆڕدرێت؟
+**2.** Where do you change a slide's shape (a title, or a title and text)?
 
-@en Where do you change a slide's shape (a title, or a title and text)?
-
-> **وەڵام:** Layout
+> **Answer:** Layout
 > 
-> لە تەنیشت New Slide.
+> Next to New Slide.
 
-**3.** دیزاین بۆ هەموو سلایدەکان لە کام تابدایە؟
+**3.** Which tab gives every slide a design?
 
-@en Which tab gives every slide a design?
-
-> **وەڵام:** Design
+> **Answer:** Design
 > 
-> یەک کلیک، هەموو سلایدەکان.
+> One click, every slide.
 
-**4.** Text Box لە کام تابدایە؟
+**4.** Which tab has Text Box?
 
-@en Which tab has Text Box?
-
-> **وەڵام:** Insert
+> **Answer:** Insert
 > 
-> لەگەڵ Pictures.
+> With Pictures.
 
-**5.** پێشکەشکردن لە سەرەتاوە؟
+**5.** Presenting from the beginning?
 
-@en Presenting from the beginning?
-
-> **وەڵام:** F5
+> **Answer:** F5
 > 
-> یان From Beginning.
+> Or From Beginning.
 
-**6.** پێشکەشکردن لەو سلایدەی ئێستاوە؟
+**6.** Presenting from the current slide?
 
-@en Presenting from the current slide?
-
-> **وەڵام:** Shift + F5
+> **Answer:** Shift + F5
 > 
-> یان From Current Slide.
+> Or From Current Slide.
 
-**7.** کۆتایی پێشکەشکردن؟
+**7.** Ending the slide show?
 
-@en Ending the slide show?
-
-> **وەڵام:** Esc
+> **Answer:** Esc
 > 
 > Esc.
 
-**8.** سلایدی داهاتوو لە کاتی پێشکەشکردن؟
+**8.** The next slide, while presenting?
 
-@en The next slide, while presenting?
-
-> **وەڵام:** Space یان تیری ڕاست
+> **Answer:** Space or the right arrow
 > 
-> یان کلیک.
+> Or a click.
 
-**9.** بۆ بینینی ئەنیمەیشنێک پێش پێشکەشکردن؟
+**9.** To see an animation before presenting?
 
-@en To see an animation before presenting?
-
-> **وەڵام:** Preview
+> **Answer:** Preview
 > 
-> لە تابی Animations.
+> On the Animations tab.
 
-**10.** سلایدی باش چی تێدایە؟
+**10.** What does a good slide have?
 
-@en What does a good slide have?
-
-> **وەڵام:** کەم وشە و پیتی گەورە
+> **Answer:** Few words and big letters
 > 
-> سلاید بۆ خوێندنەوەی تەواوی دەقەکە نییە.
+> A slide is not for reading out the whole text.
 
-**11.** دوو کلیل بنووسە کە پێشکەشکردن دەست پێ دەکەن.
+**11.** Write two keys that start a slide show.
 
-@en Write two keys that start a slide show.
-
-> **وەڵام:** F5 و Shift + F5
+> **Answer:** F5 and Shift + F5
 
 ---
 
-# تاقیکردنەوەکان — چی چاوەڕێت دەکات
+# The papers — what to expect
 
-هیچ شتێک لەمانە نهێنی نییە. ئەگەر بزانیت چی دێت، باشتر ئامادە دەبیت.
+None of this is a secret. Knowing what is coming is how you prepare for it.
 
-|  | کویز | میدتێرم | فاینەل |
+|  | Quiz | Midterm | Final |
 |---|---|---|---|
-| نمرە | **8** — تێکڕای هەردوو کویز | **24** | **40** |
-| کات | ~15 خولەک، لە سەرەتای وانەکە | 60 خولەک، لە ڕۆژێکی جیادا | 60 خولەک، لە ڕۆژێکی جیادا |
-| چۆن | ئۆنلاین و کرداری: فایلێکی Word، کارەکان، و تیککردنی وەڵام | ئۆنلاین و کرداری: فایلێکی zip بە فۆڵدەرەوە، کارەکان، و تیککردنی وەڵام | ئۆنلاین و کرداری: فایلێکی Word و فایلێکی PowerPoint، کارەکان، و تیککردنی وەڵام |
-| کام وانەکان | کویزی 1: وانەی 5 · کویزی 2: وانەی 6 | 1 – 4 | Word و PowerPoint |
-| لەم ورقەیەوە | ناوی دوگمە و کلیلەکان | ناوی دوگمە و کلیلەکان | ناوی دوگمە و کلیلەکان |
-| مۆک — نمرەی ناژمێردرێت | کۆتایی وانەی 3، لە پۆل | — | — |
+| Marks | **8** — the average of both quizzes | **24** | **40** |
+| Time | ~15 minutes, at the start of the lesson | 60 minutes, on a day of its own | 60 minutes, on a day of its own |
+| How | Online and hands-on: a Word file, tasks, and ticking the answer | Online and hands-on: a zip file of folders, tasks, and ticking the answer | Online and hands-on: a Word file and a PowerPoint file, tasks, and ticking the answer |
+| Which lessons | Quiz 1: lesson 5 · Quiz 2: lesson 6 | 1 – 4 | Word and PowerPoint |
+| From this sheet | the names of the buttons and keys | the names of the buttons and keys | the names of the buttons and keys |
+| Mock — not counted | end of lesson 3, in class | — | — |
 
-> **هەموو پەڕەکان کردارین:** تەنها ئەو قوتابییە باش دەردەچێت کە **ئەرکی هەموو
-> وانەکانی بە دەستی خۆی کردبێت**.
+> **Every paper is hands-on:** only a student who **did every lesson's
+> task with their own hands** does well.
 >
-> ئەم ورقەیە ناوی دوگمە و کلیلەکانت فێر دەکات؛ ئەرکەکان دەستەکانت فێر دەکەن.
+> This sheet teaches you the names of the buttons and keys; the tasks teach
+> your hands.
 
 ---
 
-# پرسیارە قورسەکان — چۆن ئامادە دەبیت
+# The harder questions — how to prepare
 
-> **ئەم پرسیارانە لەم ورقەیەدا نین.** ئەو بیرکردنەوەیە ڕادەهێنن کە کارە
-> کردارییەکان پێویستیان پێیەتی: چی ڕوو دەدات، چی هەڵە بووە، و چی دەکەیت. لەبەرکردن
-> سوودی نییە — چونکە بارەکە جیاوازە.
+> **These questions are not on this sheet.** They train the thinking the
+> hands-on tasks need: what happens, what went wrong, what you do. Memorising
+> will not help — the situation will be different.
 
-> بەڵام سێ جۆرن، و ئەگەر جۆرەکان بناسیت دەزانیت چۆن بیربکەیتەوە. بۆ هەر
-> جۆرێک **دوو نموونەی کراوە** لەگەڵ وەڵامی تەواو هەیە.
+> But there are three kinds, and knowing the kind tells you how to think.
+> Each carries **two worked examples** with a full answer.
 
-> ⚠️ **ئەم نموونانە خۆیان لە تاقیکردنەوەدا نایەنەوە.**
+> ⚠️ **These examples themselves will not come back.**
 >
-> هەمان **جۆری** پرسیار دێت، بەڵام لەسەر بارێکی تر. لەبەرکردنی ئەم وەڵامانە
-> سوودی نییە: ئەوەی سوودی هەیە، ئەوەیە تێبگەیت **چۆن** بۆ وەڵامەکە گەیشتین.
+> The same **kind** of question will, on a different situation. Memorising
+> these answers buys you nothing — what pays is understanding **how** each
+> answer was reached.
 
-## 1. چی ڕوو دەدات؟
+## 1. What happens?
 
-کارێکت بۆ دەگێڕدرێتەوە و دەبێت بڵێیت ئەنجامەکەی چی دەبێت.
+An action is described and you say what comes of it.
 
-**چۆن وەڵامی دەدەیتەوە:**
+**How to answer:**
 
-- هەنگاوەکان لە مێشکی خۆتدا دووبارە بکەرەوە، وەک ئەوەی لە پۆلدا کردت.
-- بپرسە: فایلەکە دەچێتە کوێ؟ پەنجەرەکە دەچێتە کوێ؟
-- وەڵامی «هیچ» یان «هەمووی دەسڕێتەوە» زۆرجار هەڵەیە: کۆمپیوتەر بە ئاسانی شتێک لەدەست نادات.
+- Go through the steps in your head, as you did in class.
+- Ask: where does the file go? Where does the window go?
+- "Nothing" or "everything is deleted" is usually wrong: a computer does not lose things easily.
 
-**نموونەی 1**
+**Example 1**
 
-> لە Word دەقێکت نووسی و [[Ctrl+Z]] ت دوو جار داگرت.
+> You typed some text in Word and pressed [[Ctrl+Z]] twice.
 
-> **وەڵام:** دوایین دوو کار هەڵدەوەشێنرێنەوە، بۆ نموونە دوایین دوو وشەی نووسراو. [[Ctrl+Y]] دەیانگەڕێنێتەوە.
+> **Answer:** The last two actions are undone, for example the last two words typed. [[Ctrl+Y]] brings them back.
 
-**نموونەی 2**
+**Example 2**
 
-> فۆڵدەرێک بە ناوی Photos لە سەر دێسکتۆپ بۆ ناو Documents ڕادەکێشیت.
+> You drag a folder called Photos from the desktop into Documents.
 
-> **وەڵام:** فۆڵدەرەکە دەگوازرێتەوە بۆ Documents و لەسەر دێسکتۆپ نامێنێت، چونکە هەردووکیان لەسەر هەمان دیسکن. ڕاکێشان بۆ فلاش کۆپی دەکات، نەک گواستنەوە.
+> **Answer:** The folder moves into Documents and leaves the desktop, because both are on the same drive. Dragging onto a flash drive copies instead of moving.
 
-## 2. چی هەڵە بووە؟
+## 2. What went wrong?
 
-کێشەیەکت پیشان دەدرێت و دەبێت هۆکارەکەی بدۆزیتەوە.
+You are shown a problem and find its cause.
 
-**چۆن وەڵامی دەدەیتەوە:**
+**How to answer:**
 
-- سەرەتا ئاسانترین هۆکار بپشکنە: زمانی کیبۆرد، Caps Lock، هەڵبژاردنی دەق، Wi-Fi.
-- بپرسە: کام هەنگاو لەبیر کراوە؟
-- وەڵامەکە بە یەک ڕستە بنووسە: «... چونکە ...».
+- Check the simplest cause first: the keyboard language, Caps Lock, the selection, Wi-Fi.
+- Ask: which step was left out?
+- Write the answer in one sentence: "... because ...".
 
-**نموونەی 1**
+**Example 1**
 
-> قوتابییەک دەڵێت: «لە Word کلیکم لە Center کرد، بەڵام تەنها یەک دێڕ چووە ناوەڕاست.»
+> A student says: "I clicked Center in Word, but only one line moved to the middle."
 
-> **وەڵام:** تەنها ئەو پەرەگرافەی کورسەری تێدا بوو هەڵبژێردرابوو. بۆ هەمووی، سەرەتا [[Ctrl+A]]، پاشان Center.
+> **Answer:** Only the paragraph with the cursor in it was selected. For all of it, first [[Ctrl+A]], then Center.
 
-**نموونەی 2**
+**Example 2**
 
-> Chrome دەڵێت No internet، بەڵام مۆبایلەکەت بە هەمان Wi-Fi کار دەکات.
+> Chrome says No internet, but your phone works on the same Wi-Fi.
 
-> **وەڵام:** لاپتۆپەکە بە Wi-Fi ـەوە پەیوەست نییە یان Wi-Fi ی کوژاوەیە. لە Taskbar وێنۆچکەی Wi-Fi بپشکنە و تۆڕەکە هەڵبژێرە.
+> **Answer:** The laptop is not connected, or its Wi-Fi is off. Check the Wi-Fi icon on the taskbar and choose the network.
 
-## 3. چی دەکەیت؟
+## 3. What do you do?
 
-بارێک دەخرێتە بەردەمت و دەبێت دروستترین هەنگاو هەڵبژێریت.
+A situation is put to you and you choose the right step.
 
-**چۆن وەڵامی دەدەیتەوە:**
+**How to answer:**
 
-- هەنگاوێک هەڵبژێرە کە شتێک تێک نادات: هەمیشە ڕێگای پارێزراو.
-- ئەگەر دوو وەڵام ڕاست دەردەکەون، ئەوە هەڵبژێرە کە لە وانەکەدا فێری بوویت.
-- دوگمەی داگیرساندن و سڕینەوە دوایین ڕێگان، نەک یەکەم.
+- Choose a step that breaks nothing: always the safe way.
+- If two answers look right, choose the one the lesson taught.
+- The power button and deleting are the last resort, not the first.
 
-**نموونەی 1**
+**Example 1**
 
-> دەتەوێت فایلێک بۆ هاوڕێیەک بنێریت، بەڵام 40 MB ە.
+> You want to send a friend a file, but it is 40 MB.
 
-> **وەڵام:** لە جیمەیل وەک هاوپێچ پێوەی بکە؛ چونکە لە 25 MB گەورەترە، Gmail خۆی وەک لینکی Google Drive دەینێرێت.
+> **Answer:** Attach it in Gmail as usual; because it is over 25 MB, Gmail itself sends it as a Google Drive link.
 
-**نموونەی 2**
+**Example 2**
 
-> لە پێشکەشکردنێکدا سلایدی 4 هەڵەیەکی تێدایە و ئێستا لە سلایدی 2 ی.
+> In a presentation, slide 4 has a mistake and you are on slide 2 now.
 
-> **وەڵام:** [[Esc]] بۆ دەرچوون، هەڵەکە لە سلایدی 4 چاک بکە، پاشان [[Shift+F5]] بۆ دەستپێکردنەوە لەو سلایدەی ئێستاوە.
+> **Answer:** [[Esc]] to leave, fix the mistake on slide 4, then [[Shift+F5]] to start again from the current slide.

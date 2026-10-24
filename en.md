@@ -524,9 +524,19 @@ To open **Settings**: press [[Win+I]], or Start → Settings.
 
 ## 4. Installing and removing a program
 
-- **Install:** from the **Microsoft Store** (Start → Microsoft Store), or from the program's official website.
-- **Remove:** [[Win+I]] → **Apps** → **Installed apps** → find the program ((1)) → click **…** ((2))
-  → **Uninstall**.
+**Installing from the Microsoft Store:** **Start** → **Microsoft Store** → search for the program →
+**Get** or **Install**.
+
+**Installing from the program's own website:**
+
+1. Open the official website and click **Download**.
+2. The file goes into the **Downloads** folder. [[Ctrl+J]] in Chrome finds it.
+3. Double-click the file. Its name ends in **.exe** or **.msi**.
+4. If Windows asks **Do you want to allow this app to make changes?**, click **Yes**.
+5. Click **Next** to the end, then **Install**, and **Finish** at the end.
+
+**Removing a program:** [[Win+I]] → **Apps** → **Installed apps** → find the program ((1)) → click
+**…** ((2)) → **Uninstall**, then **Uninstall** once more to confirm.
 
 ![Installed apps](img/screens-lesson4-apps.webp)
 
@@ -566,6 +576,31 @@ Copy, cut and paste were in lesson 2: [[Ctrl+C]], [[Ctrl+X]] and [[Ctrl+V]].
 3. The picture is copied. You can paste it into Word or Gmail with [[Ctrl+V]].
 4. It is also saved in the **Pictures** → **Screenshots** folder.
 
+## 8. A Kurdish font for Word
+
+Windows has the Kurdish letters, but not every Kurdish font. The **Unikurd** fonts write Kurdish
+and Arabic in one font, which is what a report in Word needs.
+
+### Installing a font
+
+1. Download the font. This video shows where it is and how to find it:
+
+```
+https://youtu.be/Lf5kimIJSQw
+```
+
+2. If the file is a **zip**, right-click it → **Extract All** → **Extract**, as in lesson 3.
+3. Open the folder. A font file ends in **.ttf** or **.otf**.
+4. Right-click the font file → **Install**. It takes a few seconds.
+5. For everybody who uses this computer: right-click → **Install for all users**.
+6. Open Word. The new font is there in the list of fonts.
+
+> If Word was already open, close it and open it again, or the new font will not be there.
+
+### Removing a font
+
+[[Win+I]] → **Personalization** → **Fonts** → click the font → **Uninstall**.
+
 ## Lesson 4 task
 
 1. Add Kurdish, and type your name in Kurdish in Notepad.
@@ -579,7 +614,8 @@ Copy, cut and paste were in lesson 2: [[Ctrl+C]], [[Ctrl+X]] and [[Ctrl+V]].
 - [ ] I can add Kurdish and switch the language with [[Win+Space]]
 - [ ] I can set the sound and the brightness
 - [ ] I can put the clock and the date right
-- [ ] I can remove a program
+- [ ] I can install a program and remove it
+- [ ] I can install a Kurdish font and use it in Word
 - [ ] I can find my laptop's specifications
 - [ ] I can take a screenshot with [[Win+Shift+S]]
 

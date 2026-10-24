@@ -4,9 +4,10 @@
 > do the tasks on your laptop and tick what you see. These questions teach you
 > what each button and key does — which is what the tasks need.
 
-> The sheet is in both languages so that you can follow it, but **the papers are
-> in English only** — so read the English line under each question too. Button
-> and key names stay in English, as they appear on the screen.
+> **The papers are in English only**, so this sheet is too: reading it is
+> already practice for them. Button and key names stay in English, as they
+> appear on the screen. The Kurdish for each word is in your guide, in
+> brackets beside it, and on the words sheet your teacher prints for you.
 
 > The best preparation: do every lesson's task with your own hands. The last
 > page says what to expect.
