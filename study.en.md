@@ -8,6 +8,9 @@
 > Kurdish for each word is in your guide, in brackets beside it, and on the
 > words sheet your teacher prints for you.
 
+> **The sentence under each answer is only there to be understood** — it is the
+> reason the answer is right. No paper ever asks for it.
+
 > The best preparation: do every lesson's task with your own hands. The last
 > page says what to expect.
 
