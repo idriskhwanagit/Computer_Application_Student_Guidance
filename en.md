@@ -163,8 +163,18 @@ In the name of an Intel processor, the number after i3, i5 or i7 shows the gener
 | Choice | What it does | When |
 |---|---|---|
 | **Sleep** | The computer sleeps; your work stays open | A short break |
+| **Hibernate** | It saves your work to the storage, then switches off completely | When you put it away for a long time |
 | **Shut down** | The computer switches off completely | The end of the day |
 | **Restart** | It switches off and back on by itself | When the computer is slow or has a problem |
+
+**Sleep and Hibernate:** both keep your work, but in two different places. Sleep keeps it in the
+RAM: it comes back at once, but it still uses a little power, and the work is lost if the battery
+runs out. Hibernate writes it to the storage and uses no power at all: it is safer, but it takes a
+few seconds longer.
+
+> If Hibernate is not in the **Power** menu, Windows has hidden it. To show it: **Control Panel** →
+> **Power Options** → **Choose what the power buttons do** → **Change settings that are currently
+> unavailable** → tick **Hibernate**.
 
 > ### Never
 > Do not hold the power button down for several seconds to switch off — unless the computer has frozen
@@ -259,7 +269,7 @@ Click the Start button, or press the [[Win]] key.
 - **Search** ((1)): type the program's name, for example Word, and press [[Enter]].
 - **Pinned programs** ((2)): click any of them and it opens.
 - **All programs** ((3)): the All button lists every program.
-- **Power** ((4)): for Sleep, Shut down and Restart, as you learned in lesson 1.
+- **Power** ((4)): for Sleep and Hibernate and Shut down and Restart, as you learned in lesson 1.
 
 ## 3. Windows
 
