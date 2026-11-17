@@ -845,7 +845,7 @@ None of this is a secret. Knowing what is coming is how you prepare for it.
 | How | Online and hands-on: a Word file, tasks, and ticking the answer | Online and hands-on: a zip file of folders, tasks, and ticking the answer | Online and hands-on: a Word file and a PowerPoint file, tasks, and ticking the answer |
 | Which lessons | Quiz 1: lesson 5 · Quiz 2: lesson 6 | 1 – 4 | Word and PowerPoint |
 | From this sheet | the names of the buttons and keys | the names of the buttons and keys | the names of the buttons and keys |
-| Mock — not counted | end of lesson 3, in class | — | — |
+| Mock — not counted | end of lesson 3, in class | — | after lesson 7, at home, for 48 hours |
 
 > **Every paper is hands-on:** only a student who **did every lesson's
 > task with their own hands** does well.

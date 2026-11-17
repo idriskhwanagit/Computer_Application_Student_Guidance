@@ -27,9 +27,11 @@ have never touched a computer, this guide was written for you.
 | **Total** | **100** | |
 
 **How the papers work:** every paper comes with a file attached to the teacher's e-mail. You download
-it, do each task on your laptop, and tick what you see. Every paper is in English.
+it, do each task on your laptop, and tick what you see. The answer only shows once you do the task,
+so it cannot be learnt by heart. Every paper is in English.
 
-The mock quiz at the end of lesson 3 does not count: it is there so you try a paper like this once.
+Two mocks do not count: they are there so you try papers like these first. The mock quiz is at
+the end of lesson 3, in class; the mock final is after lesson 7, at home, open for 48 hours.
 
 # Lesson 1 — The computer, and choosing a laptop
 
@@ -448,6 +450,8 @@ https://myaccount.google.com/security
 1. Open the e-mail. The attached files are at the bottom, under the message.
 2. Point at the file and click the **Download** arrow. It goes into the **Downloads** folder, and
    [[Ctrl+J]] in Chrome lists it.
+3. A Word or PowerPoint file from the e-mail first opens in **Protected View**, with a yellow bar
+   at the top. Click **Enable Editing** in that bar, or you cannot change anything in the file.
 
 ### Opening a zip file
 
@@ -833,6 +837,9 @@ pictures, and a closing slide. Use a design and one animation. Save it in your o
 This is homework: choose a subject, write a report on it in Word, build a presentation on it in
 PowerPoint, and send both files to the teacher by the university Gmail. It is your report mark:
 16 of the 100. The teacher gives the last day to send it.
+
+> **Mock final:** after this lesson, at home, open for 48 hours: the same kind of paper as the final,
+> on a Word file and a PowerPoint file. Its mark does not count; it shows you what to expect.
 
 > **Final:** on a separate day after this lesson, 60 minutes: online, on your laptop, in English, on a
 > Word file and a PowerPoint file. It is worth 40 marks.
