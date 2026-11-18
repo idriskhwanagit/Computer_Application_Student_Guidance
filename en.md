@@ -241,7 +241,7 @@ capital, and press [[Enter]] at the end.
 # Lesson 2 — Windows and files
 
 > **Today you will learn to** know the taskbar and the Start menu, handle windows, make folders,
-> copy and paste files, and use a flash drive.
+> know a file's type, copy and paste files, and use a flash drive.
 
 ## 1. The desktop and the taskbar
 
@@ -290,8 +290,16 @@ buttons, number ((6)) in the picture of part 4:
 
 ## 4. File Explorer: files and folders
 
-- **File:** any work you save, such as a letter, a picture or a presentation.
-- **Folder:** like a bag you keep your files in, in order. A folder can hold other folders too.
+Think of your study desk:
+
+- **File:** like a single sheet of paper. Any work you save is a file, such as a letter, a picture
+  or a presentation.
+- **Folder:** like a bag you keep your sheets in, in order. A folder can hold other folders too,
+  like a bag with smaller bags inside it.
+- **Telling them apart:** a folder has a yellow icon. A file has the icon of the program that opens
+  it, such as the blue **W** for Word.
+- **Where a file is:** like a home address. In the picture below, ((1)) says **Documents** →
+  **Ahmad Ali**: the Ahmad Ali folder is inside Documents, and the files are inside Ahmad Ali.
 
 To open File Explorer, click the yellow folder in the taskbar, or press [[Win+E]].
 
@@ -318,6 +326,65 @@ To open File Explorer, click the yellow folder in the taskbar, or press [[Win+E]
 - **Rename:** click the file → press [[F2]] → type the new name → [[Enter]].
 - **Delete:** click the file → press [[Delete]]. The file goes to the **Recycle Bin**.
 - **Get it back:** on the desktop, double-click the **Recycle Bin** → right-click the file → **Restore**.
+
+### A file's type: the extension
+
+A file's name has two parts with a dot between them, for example **CV.docx**:
+
+| Part | In the example | What it is |
+|---|---|---|
+| Name | CV | What you choose yourself, and can change |
+| Extension | .docx | The file's type: it tells Windows which program opens it |
+
+**An easy way to see it:** the extension is like the label on a jar. If you change the label on a
+jar of honey to "salt", there is still honey inside; only nobody knows what it is. Changing **.docx**
+to **.pdf** does the same: the file does not become a PDF, only Windows no longer knows what opens it.
+
+| Extension | Kind of file | What opens it |
+|---|---|---|
+| .docx | A document | Word |
+| .pptx | A presentation | PowerPoint |
+| .pdf | A document for reading and printing | Edge or Chrome |
+| .jpg and .png | A picture | Photos |
+| .zip and .rar | Several files packed into one | File Explorer or WinRAR, in lessons 3 and 4 |
+| .exe | A program, or a program's installer | It runs by itself, in lesson 4 |
+
+### Showing the extension
+
+Windows hides the extension at first and shows only **CV**. To show it:
+
+1. In File Explorer, click **View** on the bar at the top.
+2. At the bottom of the list, click **Show**.
+3. Click **File name extensions** until a ✓ appears beside it.
+
+Now the names look as in the picture above, at ((5)): **CV.docx**, **Laptop.jpg** and
+**Presentation.pptx**. The **Type** column tells the kind of each file too.
+
+### Renaming, and putting an extension right
+
+While the extension shows, [[F2]] selects only the name, not the extension. Change only that part. If
+you change the extension, Windows asks:
+
+> **If you change a file name extension, the file might become unusable. Are you sure you want to
+> change it?**
+>
+> That is: "if you change the extension, the file may stop working. Are you sure?" Click **No**.
+
+**Putting it right:** if you gave a wrong extension and the file will not open:
+
+1. Click the file and press [[F2]].
+2. Delete the wrong extension and type the right one. If you made it in Word, its extension is
+   **.docx**; if in PowerPoint, **.pptx**.
+3. Press [[Enter]], and click **Yes** when Windows asks.
+
+The file opens as before, because what was inside it never changed.
+
+**Changing the type the right way:** to turn a file into another type, use **Save As** inside the
+program and choose the new type. In lesson 5, for example, Word turns the file into a PDF with **Save As**.
+
+> ### Careful
+> Changing the extension does not change the file's type; it only breaks the file. To change the
+> type, use **Save As**.
 
 ## 5. Copy, cut and paste
 
@@ -352,7 +419,8 @@ choose them all: [[Ctrl+A]].
 2. Inside it, make two more folders: **Lessons** and **Pictures**.
 3. Copy a picture from the computer's Pictures folder and paste it in your new folder.
 4. Rename the picture.
-5. Copy your whole folder to a flash drive, and remove the flash drive safely.
+5. Show the file extensions and look at your picture: is its extension **.jpg** or **.png**?
+6. Copy your whole folder to a flash drive, and remove the flash drive safely.
 
 ## Check yourself — lesson 2
 
@@ -361,6 +429,8 @@ choose them all: [[Ctrl+A]].
 - [ ] I can make a folder and rename it
 - [ ] I can copy and paste a file, with the mouse and with the keyboard
 - [ ] I can get a deleted file back from the Recycle Bin
+- [ ] I can show file extensions, and I know what opens each type
+- [ ] If an extension was changed by mistake, I can put it right
 - [ ] I can use a flash drive and remove it safely
 
 # Lesson 3 — The internet and the university Gmail
@@ -460,6 +530,9 @@ A **zip** file holds several files and folders packed into one.
 1. In File Explorer, right-click the zip file → **Extract All** → **Extract**.
 2. A normal folder with the same name opens. Work in that folder, not inside the zip.
 
+A **rar** file is like a zip. Windows 11 opens it with the same **Extract All**; the WinRAR program
+comes in lesson 4.
+
 ## 7. Signing out on a shared computer
 
 - **Sign out:** click your account picture in the top right corner → **Sign out**.
@@ -481,12 +554,12 @@ for example the picture from the lesson 2 task.
 - [ ] I know what to do if I forget my password
 - [ ] I can send an e-mail with an attachment
 - [ ] I can sign out on a shared computer
-- [ ] I can save an attachment and open a zip file
+- [ ] I can save an attachment and open a zip or rar file
 
 # Lesson 4 — Windows settings
 
 > **Today you will learn to** type in Kurdish, set the sound, the brightness and the clock, install
-> and remove a program, find your laptop's specifications, and take a screenshot.
+> and remove a program such as WinRAR, find your laptop's specifications, and take a screenshot.
 
 To open **Settings**: press [[Win+I]], or Start → Settings.
 
@@ -557,6 +630,35 @@ To open **Settings**: press [[Win+I]], or Start → Settings.
 > ### Careful
 > Never install a program from a website you do not know. Viruses often come that way.
 
+### An example: installing WinRAR
+
+The **WinRAR** program opens **rar** and **zip** files, and makes them.
+
+1. In Chrome, open this address. It is the official website; do not download it from anywhere else:
+
+```
+https://www.win-rar.com/download.html
+```
+
+2. Under **Download WinRAR**, click the button that says **WinRAR … English 64 bit**.
+3. The file goes into **Downloads**, with a name like **winrar-x64-723.exe**. Double-click it, and if
+   Windows asks, click **Yes**.
+4. In the first window, click **Install**.
+5. A settings window comes up with **Associate WinRAR with** at the top. Change nothing and click
+   **OK**.
+6. At the end, click **Done**.
+
+**Opening a rar file:** right-click the file → **WinRAR** → **Extract to** and the file's name. A new
+folder with the same name is made, with the files inside. If **WinRAR** is not in the menu, click
+**Show more options**.
+
+> **Know this before you install it:**
+>
+> - WinRAR is not free: you may try it for 40 days at no charge, and its terms say a licence must
+>   be bought after that. It then shows a reminder window.
+> - Windows 11 opens a rar file by itself, with the same **Extract All** as in lesson 3. You do not
+>   need WinRAR to open one; you need it to make a rar file, or to open one with a password.
+
 ## 5. Your laptop's specifications
 
 [[Win+I]] → **System** → **About**. This is the same picture as in lesson 1:
@@ -620,6 +722,7 @@ https://youtu.be/Lf5kimIJSQw
 1. Add Kurdish, and type your name in Kurdish in Notepad.
 2. Find your laptop's specifications and compare them with the laptop table of lesson 1.
 3. Take a screenshot of the About page and send it to the teacher by the university Gmail.
+4. Install WinRAR from its official website, and open the rar file the teacher sent you.
 
 > **Midterm:** on a separate day after this lesson, 60 minutes, on lessons 1 to 4: online, on your laptop, in English. It is worth 24 marks.
 
@@ -629,6 +732,7 @@ https://youtu.be/Lf5kimIJSQw
 - [ ] I can set the sound and the brightness
 - [ ] I can put the clock and the date right
 - [ ] I can install a program and remove it
+- [ ] I can install WinRAR from its official website and open a rar file
 - [ ] I can install a Kurdish font and use it in Word
 - [ ] I can find my laptop's specifications
 - [ ] I can take a screenshot with [[Win+Shift+S]]
