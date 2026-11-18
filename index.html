@@ -520,6 +520,7 @@ kbd {
 .block pre {
   margin: 0;
   padding: 1rem 1.15rem;
+  padding-inline-end: 4.6rem;     /* room for the copy button, so it covers nothing */
   overflow-x: auto;
   background: var(--code-bg);
   border-radius: 10px;
@@ -543,6 +544,12 @@ kbd {
   cursor: pointer;
 }
 .copy[data-done="1"] { color: #8fe3c8; border-color: #8fe3c8; }
+/* on a phone a long address goes on to a second line instead of out of
+   sight; the copy button still copies it whole */
+@media (max-width: 600px) {
+  .block pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+}
+bdi.nw { white-space: nowrap; }
 
 /* --- tables -------------------------------------------------------------- */
 .table-wrap { margin: 0 0 1.25rem; overflow-x: auto; }
@@ -985,6 +992,18 @@ kbd {
        takes the line's direction, and the pair is drawn as "GB 8". Kept as
        one left-to-right island, it reads the right way round. */
     s = s.replace(/(\d+(?:[.,]\d+)?) (GB|MB|TB|GHz|mm)\b/g, '<bdi dir="ltr">$1 $2</bdi>');
+    /* The same for an extension such as .docx, whose dot a Kurdish line
+       draws at the far end ("docx."), and for a site such as win-rar.com,
+       which a narrow screen breaks at its hyphen. Only the text between
+       the tags is touched, never the address inside a link. */
+    s = s.split(/(<[^>]*>)/).map(function (part) {
+      if (part.charAt(0) === "<") { return part; }
+      part = part.replace(/(^|[\s(«،:؛])(\.[A-Za-z][A-Za-z0-9]{1,4})(?=$|[^A-Za-z0-9])/g,
+                          '$1<bdi dir="ltr">$2</bdi>');
+      return part.replace(
+        /(^|[^A-Za-z0-9@._\/-])([A-Za-z0-9][A-Za-z0-9-]*(?:\.[A-Za-z0-9-]+)*\.(?:com|org|net|iq|io))(?=$|[^A-Za-z0-9.\/-]|\.(?:\s|$))/g,
+        '$1<bdi dir="ltr" class="nw">$2</bdi>');
+    }).join("");
     return s;
   }
 
