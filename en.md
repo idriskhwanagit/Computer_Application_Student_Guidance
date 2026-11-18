@@ -365,17 +365,17 @@ Now the names look as in the picture above, at ((5)): **CV.docx**, **Laptop.jpg*
 While the extension shows, [[F2]] selects only the name, not the extension. Change only that part. If
 you change the extension, Windows asks:
 
-> **If you change a file name extension, the file might become unusable. Are you sure you want to
-> change it?**
->
-> That is: "if you change the extension, the file may stop working. Are you sure?" Click **No**.
+![The question Windows asks when an extension changes](img/screens-lesson2-rename.webp)
+
+That is: "if you change the extension, the file may stop working. Are you sure?" If it was a mistake,
+click **No** ((1)).
 
 **Putting it right:** if you gave a wrong extension and the file will not open:
 
 1. Click the file and press [[F2]].
 2. Delete the wrong extension and type the right one. If you made it in Word, its extension is
    **.docx**; if in PowerPoint, **.pptx**.
-3. Press [[Enter]], and click **Yes** when Windows asks.
+3. Press [[Enter]], and click **Yes** ((2)) when Windows asks.
 
 The file opens as before, because what was inside it never changed.
 
@@ -640,17 +640,27 @@ The **WinRAR** program opens **rar** and **zip** files, and makes them.
 https://www.win-rar.com/download.html
 ```
 
-2. Under **Download WinRAR**, click the button that says **WinRAR … English 64 bit**.
-3. The file goes into **Downloads**, with a name like **winrar-x64-723.exe**. Double-click it, and if
-   Windows asks, click **Yes**.
-4. In the first window, click **Install**.
-5. A settings window comes up with **Associate WinRAR with** at the top. Change nothing and click
-   **OK**.
-6. At the end, click **Done**.
+![The official WinRAR website](img/screens-lesson4-winrar.webp)
 
-**Opening a rar file:** right-click the file → **WinRAR** → **Extract to** and the file's name. A new
-folder with the same name is made, with the files inside. If **WinRAR** is not in the menu, click
-**Show more options**.
+2. Make sure the address bar says **win-rar.com** ((1)). If a message about cookies appears, click
+   **AGREE** ((3)).
+3. Under **Download WinRAR**, click the blue button ((2)) that says **WinRAR … English 64 bit**; not
+   the **Beta** link.
+4. The file goes into **Downloads**, with a name like **winrar-x64-723.exe**. Double-click it, and if
+   Windows asks, click **Yes**.
+5. In the first window, click **Install**.
+6. A settings window comes up with **Associate WinRAR with** at the top. Change nothing and click
+   **OK**.
+7. At the end, click **Done**.
+
+**Opening a rar file:** right-click the file:
+
+![The right-click menu of a rar file](img/screens-lesson4-rar.webp)
+
+- **Extract All** ((1)): Windows' own, as for a zip in lesson 3. It is there without WinRAR too.
+- **WinRAR** ((2)) → **Extract to** and the file's name: makes a new folder with the same name and
+  puts the files in it.
+- **Show more options** ((3)): if **WinRAR** is not in the menu, you find it here.
 
 > **Know this before you install it:**
 >
