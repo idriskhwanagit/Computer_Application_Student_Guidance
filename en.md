@@ -682,6 +682,12 @@ makes a folder with the file's name, so nothing spills loose into **Downloads**.
 Write down the processor ((1)), the RAM ((2)) and the storage ((3)), and compare them with the
 laptop table of lesson 1. **System type** ((4)) should be 64-bit.
 
+The storage type, SSD or HDD, is not on the About page: [[Ctrl+Shift+Esc]] → **Performance** →
+**Disk 0**. Under its name it says **SSD** or **HDD**.
+
+To send these specifications, click **Copy** under **Device specifications**, then press
+[[Ctrl+V]] where they are needed.
+
 ## 6. Shortcuts
 
 | Keys | What they do |
@@ -734,16 +740,26 @@ https://youtu.be/Lf5kimIJSQw
 ## Lesson 4 task
 
 1. Add Kurdish, and type your name in Kurdish in Notepad.
-2. Find your laptop's specifications and compare them with the laptop table of lesson 1.
-3. Take a screenshot of the About page and send it to the teacher by the university Gmail.
+2. Find your laptop's specifications and compare them with the laptop table of lesson 1: the
+   processor, the RAM, and SSD or HDD.
+3. Take a screenshot of the About page.
 4. Install WinRAR on **your own laptop** from its official website, and open the rar file the
    teacher sent you with **Extract to**. The midterm is on your own laptop and needs it.
+5. Send the homework in the **lesson 4 homework form**, whose link the teacher sends to your
+   university Gmail: your name in Kurdish, the specifications with the **Copy** button, your
+   storage type, your comparison, and the screenshot with **Add file**. The top of the form says
+   when it closes.
+
+> **It is marked automatically:** the Kurdish name 3, the About screenshot 3 and the comparison 4.
+> The comparison is checked against your own laptop's specifications, so a friend's ticks are no
+> help to you.
 
 > **Midterm:** on a separate day after this lesson, 60 minutes, on lessons 1 to 4: online, on your laptop, in English. It is worth 24 marks.
 
 ## Check yourself — lesson 4
 
 - [ ] I can add Kurdish and switch the language with [[Win+Space]]
+- [ ] I can tell in Task Manager whether my storage is an SSD or an HDD
 - [ ] I can set the sound and the brightness
 - [ ] I can put the clock and the date right
 - [ ] I can install a program and remove it
