@@ -843,7 +843,7 @@ None of this is a secret. Knowing what is coming is how you prepare for it.
 | Marks | **8** — the average of both quizzes | **24** | **40** |
 | Time | ~15 minutes, at the start of the lesson | 60 minutes, on a day of its own | 60 minutes, on a day of its own |
 | How | Online and hands-on: a Word file, tasks, and ticking the answer | Online and hands-on: a zip file of folders, tasks, and ticking the answer | Online and hands-on: a Word file and a PowerPoint file, tasks, and ticking the answer |
-| Which lessons | Quiz 1: lesson 5 · Quiz 2: lesson 6 | 1 – 4 | Word and PowerPoint |
+| Which lessons | Quiz 1: lesson 5 · Quiz 2: lesson 6 | 1 – 4 | 1 – 7: most tasks Word and PowerPoint |
 | From this sheet | the names of the buttons and keys | the names of the buttons and keys | the names of the buttons and keys |
 | Mock — not counted | end of lesson 3, in class | — | after lesson 7, at home, for 48 hours |
 

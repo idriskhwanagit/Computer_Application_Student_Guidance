@@ -771,6 +771,9 @@ Start → **Word** → **Blank document**. A white page opens and the cursor wai
 | ((4)) | Paragraph alignment | Left, centre, right, and both sides |
 | ((5)) | Text direction | An English line from the left, a Kurdish line from the right |
 
+**The bar at the bottom of Word** shows your page and the number of words. If you select some text,
+for example all of it with [[Ctrl+A]], it says how many words are selected.
+
 ## 3. Typing Kurdish and English
 
 1. Choose the keyboard language with [[Win+Space]], as in lesson 4.
@@ -882,6 +885,9 @@ page numbers can differ:
 | Cover | The report's title, your name, department, teacher's name and year | None |
 | Table of contents | The headings and their page numbers | None |
 | The report itself | Introduction, the parts, conclusion and sources | From 1 |
+
+**Length:** the report itself is 4 to 6 pages, besides the cover and the table of contents, so 6 to 8
+pages in all. **A4** paper, **Normal** margins, size 12 for the text, and line spacing of 1.15 to 1.5.
 
 ### Sections
 
@@ -1007,7 +1013,8 @@ pictures, and a closing slide. Use a design and one animation. Save it in your o
 This is homework: choose a subject, write a report on it in Word, build a presentation on it in
 PowerPoint, and send both files to the teacher by the university Gmail. It is your report mark:
 16 of the 100. The teacher gives the last day to send it. Give it a cover, a table of contents and
-page numbers, as in part 4 of lesson 6.
+page numbers, as in part 4 of lesson 6, and make the report itself 4 to 6 pages, so 6 to 8 pages in
+all.
 
 > **Mock final:** after this lesson, at home, open for 48 hours: the same kind of paper as the final,
 > on a Word file and a PowerPoint file. Its mark does not count; it shows you what to expect.

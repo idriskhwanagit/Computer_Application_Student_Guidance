@@ -96,7 +96,8 @@ download the attached file.
 - **Deleting and restoring:** [[Delete]], then in the **Recycle Bin** right-click → **Restore**.
 - **Extensions:** **View** → **Show** → **File name extensions**. In Windows 10 it is on the **View** tab.
 - **Word:** the font box, the size box and the **B**, **I** and **U** buttons on the **Home** tab;
-  **View** → **Navigation Pane**; [[Ctrl+P]]; **Insert** → **Page Number**; **Layout** → **Margins**.
+  **View** → **Navigation Pane**; [[Ctrl+P]]; **Insert** → **Page Number**; **Layout** → **Margins**;
+  [[Ctrl+A]] and the number of words in the bar at the bottom of Word.
 - **PowerPoint:** [[F5]] from the start, [[Shift+F5]] from the chosen slide, [[Space]] to go on,
   [[Esc]] to end; **Animations** → **Fade**.
 
@@ -142,13 +143,15 @@ count how many files there are.
 
 ### Way 4 — The kind of a file
 
-**What is asked:** the files of a folder look alike; count how many have a given extension.
+**What is asked:** the files of a folder look alike; count how many have a given extension, or give
+a file's full name with its extension.
 
 **What you do:**
 
 - Turn on **View** → **Show** → **File name extensions**.
 - Now you see every file's extension, for example **.jpg** and **.png**. Count the ones the
   question names.
+- A Word file ends in **.docx**, and a PowerPoint file in **.pptx**.
 
 ### Way 5 — The browser and the laptop
 
@@ -159,7 +162,8 @@ laptops, the one the lesson 1 table says is good.
 
 - Double-click the html file; it opens in Chrome.
 - For the laptops: open each file and compare the processor, the RAM and the storage with the
-  lesson 1 table. The RAM is on the **Installed RAM** line.
+  lesson 1 table. The RAM is on the **Installed RAM** line. In the final the laptops are listed in
+  the Word file.
 
 ### Way 6 — Making the hidden visible in Word
 
@@ -197,13 +201,15 @@ there are; make a line **Heading 2**; or search for a word.
 - To search: type the word in the search box at the top of the **Navigation Pane** and read the
   number of results.
 
-### Way 9 — The pages
+### Way 9 — Pages and words
 
-**What is asked:** how many pages the document has, or the number of the page that holds something.
+**What is asked:** how many pages or words the document has, or the number of the page that holds
+something.
 
 **What you do:**
 
 - [[Ctrl+P]]: the preview says how many pages.
+- [[Ctrl+A]]: the bar at the bottom of Word says how many words are selected. Hidden words count too.
 - **Insert** → **Page Number** → **Bottom of Page**, then read the number at the bottom of that page.
 
 ### Way 10 — PowerPoint
@@ -224,6 +230,8 @@ after so many presses of [[Space]]; an animation's number; or how many bullet po
 The report is not a question in a form: at home you make a report in Word and a presentation in
 PowerPoint, and send them to the teacher by the university Gmail. To make the report well-ordered:
 
+- **Length:** the report itself 4 to 6 pages, besides the cover and the table of contents, so 6 to 8
+  pages in all.
 - **Cover:** the report's title, your name, department, teacher's name and year, with no page number.
 - **Sections:** **Layout** → **Breaks** → **Next Page**, after the cover and after the table of contents.
 - **Page numbers:** in the report's own section turn off **Link to Previous**, then **Format Page
