@@ -11,12 +11,9 @@
 > **The sentence under each answer is only there to be understood** — it is the
 > reason the answer is right. No paper ever asks for it.
 
-> The best preparation: do every lesson's task with your own hands. The last
-> page says what to expect.
-
-> **Marks:** homework **10** · report **16** · quiz **8** (the average of both quizzes) · midterm **24** · activity **2** · final **40** — total **100**.
-
-> **Mock:** at the end of lesson 3 there is a mock quiz. Its mark does not count — it is there so you try a hands-on paper once: a file from the e-mail, and tasks on it.
+> The best preparation: do every lesson's task with your own hands. Everything
+> about the papers — their tasks, marks, ways and the exam day — is in the
+> Mock and midterm guide tab.
 
 ---
 
@@ -831,107 +828,3 @@
 > **Answer:**
 > 
 > F5 and Shift + F5
-
----
-
-# The papers — what to expect
-
-None of this is a secret. Knowing what is coming is how you prepare for it.
-
-|  | Quiz | Midterm | Final |
-|---|---|---|---|
-| Marks | **8** — the average of both quizzes | **24** | **40** |
-| Time | ~15 minutes, at the start of the lesson | 60 minutes, on a day of its own | 60 minutes, on a day of its own |
-| How | Online and hands-on: a Word file, tasks, and ticking the answer | Online and hands-on: a zip file of folders, tasks, and ticking the answer | Online and hands-on: a Word file and a PowerPoint file, tasks, and ticking the answer |
-| Which lessons | Quiz 1: lesson 5 · Quiz 2: lesson 6 | 1 – 4 | 1 – 7: most tasks Word and PowerPoint |
-| From this sheet | the names of the buttons and keys | the names of the buttons and keys | the names of the buttons and keys |
-| Mock — not counted | end of lesson 3, in class | — | after lesson 7, at home, for 48 hours |
-
-> **Every paper is hands-on:** only a student who **did every lesson's
-> task with their own hands** does well.
->
-> This sheet teaches you the names of the buttons and keys; the tasks teach
-> your hands.
-
----
-
-# The harder questions — how to prepare
-
-> **These questions are not on this sheet.** They train the thinking the
-> hands-on tasks need: what happens, what went wrong, what you do. Memorising
-> will not help — the situation will be different.
-
-> But there are three kinds, and knowing the kind tells you how to think.
-> Each carries **two worked examples** with a full answer.
-
-> ⚠️ **These examples themselves will not come back.**
->
-> The same **kind** of question will, on a different situation. Memorising
-> these answers buys you nothing — what pays is understanding **how** each
-> answer was reached.
-
-## 1. What happens?
-
-An action is described and you say what comes of it.
-
-**How to answer:**
-
-- Go through the steps in your head, as you did in class.
-- Ask: where does the file go? Where does the window go?
-- "Nothing" or "everything is deleted" is usually wrong: a computer does not lose things easily.
-
-**Example 1**
-
-> You typed some text in Word and pressed [[Ctrl+Z]] twice.
-
-> **Answer:** The last two actions are undone, for example the last two words typed. [[Ctrl+Y]] brings them back.
-
-**Example 2**
-
-> You drag a folder called Photos from the desktop into Documents.
-
-> **Answer:** The folder moves into Documents and leaves the desktop, because both are on the same drive. Dragging onto a flash drive copies instead of moving.
-
-## 2. What went wrong?
-
-You are shown a problem and find its cause.
-
-**How to answer:**
-
-- Check the simplest cause first: the keyboard language, Caps Lock, the selection, Wi-Fi.
-- Ask: which step was left out?
-- Write the answer in one sentence: "... because ...".
-
-**Example 1**
-
-> A student says: "I clicked Center in Word, but only one line moved to the middle."
-
-> **Answer:** Only the paragraph with the cursor in it was selected. For all of it, first [[Ctrl+A]], then Center.
-
-**Example 2**
-
-> Chrome says No internet, but your phone works on the same Wi-Fi.
-
-> **Answer:** The laptop is not connected, or its Wi-Fi is off. Check the Wi-Fi icon on the taskbar and choose the network.
-
-## 3. What do you do?
-
-A situation is put to you and you choose the right step.
-
-**How to answer:**
-
-- Choose a step that breaks nothing: always the safe way.
-- If two answers look right, choose the one the lesson taught.
-- The power button and deleting are the last resort, not the first.
-
-**Example 1**
-
-> You want to send a friend a file, but it is 40 MB.
-
-> **Answer:** Attach it in Gmail as usual; because it is over 25 MB, Gmail itself sends it as a Google Drive link.
-
-**Example 2**
-
-> In a presentation, slide 4 has a mistake and you are on slide 2 now.
-
-> **Answer:** [[Esc]] to leave, fix the mistake on slide 4, then [[Shift+F5]] to start again from the current slide.
