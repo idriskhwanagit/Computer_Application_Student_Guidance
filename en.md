@@ -662,6 +662,9 @@ https://www.win-rar.com/download.html
   puts the files in it.
 - **Show more options** ((3)): if **WinRAR** is not in the menu, you find it here.
 
+**From now on:** open every zip or rar file with **WinRAR** → **Extract to**, not **Extract Here**. It
+makes a folder with the file's name, so nothing spills loose into **Downloads**.
+
 > **Know this before you install it:**
 >
 > - WinRAR is not free: you may try it for 40 days at no charge, and its terms say a licence must
@@ -715,7 +718,7 @@ and Arabic in one font, which is what a report in Word needs.
 https://youtu.be/Lf5kimIJSQw
 ```
 
-2. If the file is a **zip**, right-click it → **Extract All** → **Extract**, as in lesson 3.
+2. If the file is a **zip**, right-click it → **WinRAR** → **Extract to**, as in part 4.
 3. Open the folder. A font file ends in **.ttf** or **.otf**.
 4. Right-click the font file → **Install**. It takes a few seconds.
 5. For everybody who uses this computer: right-click → **Install for all users**.
@@ -837,7 +840,8 @@ your name big and bold. Save it in your own folder, as Word and as PDF.
 # Lesson 6 — Word, part 2
 
 > **Today you will learn to** write a complete report: headings, page numbers, a table and a picture,
-> and page setup, then send it by the university Gmail.
+> page setup, and a well-ordered report with a cover, sections and a table of contents, then send it
+> by the university Gmail.
 
 ## 1. Headings
 
@@ -868,7 +872,56 @@ Pane** you see them listed and reach each one with a click.
 - **Orientation** ((2)): **Portrait** for a tall page, **Landscape** for a wide one.
 - **Size** ((3)): the paper size; **A4** is used in Kurdistan.
 
-## 4. Sending the report
+## 4. A well-ordered report
+
+A good report has three parts, in this order. Each part is a section of its own, so that their
+page numbers can differ:
+
+| Part | What it holds | Page numbers |
+|---|---|---|
+| Cover | The report's title, your name, department, teacher's name and year | None |
+| Table of contents | The headings and their page numbers | None |
+| The report itself | Introduction, the parts, conclusion and sources | From 1 |
+
+### Sections
+
+A section is a part of the report with its own page numbers, **Header** and **Footer**.
+
+1. Click at the end of the last line of the cover.
+2. **Layout** → **Breaks** → under **Section Breaks**, click **Next Page**.
+3. A new page starts, and it is a new section. Do the same at the end of the table of contents.
+
+> For a plain new page, [[Ctrl+Enter]] is enough. A section is needed only when the page numbers or
+> the page setup change. To see the sections: **Home** → the **¶** button.
+
+### Each section's page numbers
+
+1. Double-click at the bottom of the first page of the report itself. The **Header & Footer** tab opens.
+2. Click **Link to Previous** to turn it off. This section is no longer tied to the one before.
+3. **Page Number** → **Bottom of Page** → choose a style.
+4. **Page Number** → **Format Page Numbers** → type 1 in **Start at** → **OK**.
+5. If the cover or the table of contents has a number, delete it there. The report's own numbers
+   stay, since the sections are no longer tied.
+6. Click **Close Header and Footer**.
+
+> In older Word this tab is called **Design**, under **Header & Footer Tools**.
+
+### Table of contents
+
+1. The report's headings must be **Heading 1** and **Heading 2**, as in part 1.
+2. Click at the top of the table of contents page.
+3. **References** → **Table of Contents** → **Automatic Table 1**.
+4. Each time you change the report: **References** → **Update Table** → **Update entire table** → **OK**.
+
+Hold [[Ctrl]] and click a heading in the table of contents to go to that heading.
+
+### Captions for pictures and tables
+
+1. Click the picture or the table → **References** → **Insert Caption**.
+2. In **Label**, choose **Figure** for a picture, or **Table** for a table. The number goes in by itself.
+3. Type a title after the number → **OK**.
+
+## 5. Sending the report
 
 1. Save the report as PDF, as in lesson 5.
 2. In the university Gmail, write a new e-mail and attach the PDF file, as in lesson 3.
@@ -888,6 +941,9 @@ picture and page numbers. Save it as PDF and send it to the teacher by the unive
 - [ ] I can add page numbers
 - [ ] I can change the margins, the orientation and the paper size
 - [ ] I can send my report by Gmail
+- [ ] I can make a cover and a table of contents
+- [ ] I can split the report into sections and start its page numbers at 1
+- [ ] I can put captions under pictures and tables
 
 # Lesson 7 — PowerPoint
 
@@ -950,7 +1006,8 @@ pictures, and a closing slide. Use a design and one animation. Save it in your o
 
 This is homework: choose a subject, write a report on it in Word, build a presentation on it in
 PowerPoint, and send both files to the teacher by the university Gmail. It is your report mark:
-16 of the 100. The teacher gives the last day to send it.
+16 of the 100. The teacher gives the last day to send it. Give it a cover, a table of contents and
+page numbers, as in part 4 of lesson 6.
 
 > **Mock final:** after this lesson, at home, open for 48 hours: the same kind of paper as the final,
 > on a Word file and a PowerPoint file. Its mark does not count; it shows you what to expect.

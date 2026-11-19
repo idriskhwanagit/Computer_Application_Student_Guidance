@@ -187,6 +187,34 @@ body {
 
 .icon-btn:hover { color: var(--accent-ink); border-color: var(--accent); }
 
+/* --- help: what the open tab holds ---------------------------------------
+   A "?" in the top bar opens a short note on the tab in front of the reader
+   and its parts, as on the MIS page. The note fills the dialog, so a click
+   on the dialog itself is a click on the backdrop. */
+.help-btn { color: var(--accent); font-weight: 700; }
+.help {
+  width: min(34rem, calc(100% - 2rem));
+  padding: 0;
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: var(--shadow);
+  font-family: var(--f-ui);
+}
+.help::backdrop { background: rgba(16, 32, 43, .45); }
+.help-in { position: relative; padding: 1.2rem 1.4rem 1rem; line-height: 1.8; }
+.help-in h2 {
+  margin: 0 0 .6rem;
+  padding-inline-end: 2.4rem;
+  font-size: 1.05rem;
+  color: var(--accent-ink);
+}
+.help-in p { margin: 0 0 .7rem; }
+.help-in ol, .help-in ul { margin: 0 0 .7rem; padding-inline-start: 1.3rem; }
+.help-in li { margin-bottom: .45rem; }
+.help-close { position: absolute; top: .8rem; inset-inline-end: .8rem; }
+
 :where(button, a, input):focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
@@ -235,6 +263,11 @@ body {
   color: var(--accent);
   font-weight: 600;
   box-shadow: 0 1px 3px rgba(16, 32, 43, .1);
+}
+/* three tabs on a phone: smaller, so they keep to one line */
+@media (max-width: 600px) {
+  .tabs-doc { gap: .15rem; padding: .15rem; }
+  .tabs-doc button { padding: .25rem .5rem; font-size: .76rem; }
 }
 
 /* --- shell --------------------------------------------------------------- */
@@ -591,6 +624,22 @@ bdi.nw { white-space: nowrap; }
 .reader blockquote:has(h3) { border-inline-start-color: var(--warn); background: var(--warn-wash); }
 .reader blockquote h3 { margin-top: 0; color: var(--warn); font-size: .95rem; }
 
+/* the exam day's steps, in the warning colour — see "<!-- exam-day -->" in
+   render(); while the page is closed for a paper it opens on this box */
+.reader .exam-day {
+  margin: 1.5rem 0;
+  padding: .3rem 1.2rem 1rem;
+  border: 1px solid color-mix(in srgb, var(--warn) 45%, transparent);
+  border-inline-start: 4px solid var(--warn);
+  border-radius: 10px;
+  background: var(--warn-wash);
+  scroll-margin-top: 5rem;
+}
+.reader .exam-day h2 { color: var(--warn); }
+.reader .exam-day > :last-child { margin-bottom: 0; }
+/* a phone's top bar is two or three rows high: the box's heading clears it */
+@media (max-width: 600px) { .reader .exam-day { scroll-margin-top: 10rem; } }
+
 /* --- a list to tick off -------------------------------------------------- */
 .reader ul.checks { padding-inline-start: 0; list-style: none; }
 .reader ul.checks li { margin-bottom: .35rem; }
@@ -803,6 +852,7 @@ bdi.nw { white-space: nowrap; }
     <div class="tabs-doc" id="tabsDoc" role="tablist" hidden>
       <button type="button" id="tab-guide" class="on" data-doc="guide"></button>
       <button type="button" id="tab-study" data-doc="study"></button>
+      <button type="button" id="tab-practical" data-doc="practical" hidden></button>
     </div>
 
     <div class="switch">
@@ -814,10 +864,18 @@ bdi.nw { white-space: nowrap; }
     </div>
 
     <select class="jump" id="jump" aria-label="Lessons"></select>
+    <button type="button" class="icon-btn help-btn" id="helpBtn" title="Help" aria-label="Help" hidden>?</button>
     <button type="button" class="icon-btn" id="themeBtn" title="Theme" aria-label="Theme">◐</button>
     <button type="button" class="icon-btn" id="fullBtn" title="Full screen" aria-label="Full screen" hidden>⛶</button>
     <button type="button" class="icon-btn" id="printBtn" title="Print" aria-label="Print">⎙</button>
   </header>
+
+  <dialog class="help" id="help">
+    <div class="help-in">
+      <button type="button" class="icon-btn help-close">✕</button>
+      <div class="help-body"></div>
+    </div>
+  </dialog>
 
   <div class="shell">
     <div class="notice" id="notice" hidden>
@@ -846,12 +904,15 @@ bdi.nw { white-space: nowrap; }
      inside DOCS and leave FETCH null. */
   var FETCH = {"ku": "ku.md", "en": "en.md"};
   var STUDY = {"ku": "study.ku.md", "en": "study.en.md"};
+  /* the Mock and midterm guide's two files: a tab of the hosted page only */
+  var PRACTICAL = {"ku": "practical.ku.md", "en": "practical.en.md"};
 
   var UI = {
     ku: { brand: "ڕێنمایی قوتابی", langLabel: "زمان", tocLabel: "ناوەڕۆک",
           copy: "کۆپی", copied: "کۆپی کرا",
           keep: "بۆ هێشتنەوەی کۆپییەک، Ctrl + P دابگرە و وەک PDF چاپی بکە",
           full: "تەواوی شاشە",
+          help: "یارمەتی", close: "داخستن",
           zoom: "بۆ گەورەکردن کلیکی لەسەر بکە",
           loading: "دەقەکە دەهێنرێت…",
           failed: "نەتوانرا دەقەکە بهێنرێت. پەیوەندی ئینتەرنێتەکەت بپشکنە و لاپەڕەکە دووبارە بارکە.",
@@ -871,6 +932,7 @@ bdi.nw { white-space: nowrap; }
           copy: "Copy", copied: "Copied",
           keep: "To keep a copy, press Ctrl + P and print to PDF",
           full: "Full screen",
+          help: "Help", close: "Close",
           zoom: "Click to enlarge",
           loading: "Loading the text…",
           failed: "The text could not be loaded. Check your connection and reload the page.",
@@ -895,20 +957,33 @@ bdi.nw { white-space: nowrap; }
 
   var TABS = {
     guide: ["ڕێنمایی وانەکان", "Lesson Guide"],
-    study: ["پرسیار و وەڵام", "Questions and Answers"]
+    study: ["پرسیار و وەڵام", "Questions and Answers"],
+    practical: ["ڕێنمایی مۆک و میدتێرم", "Mock and midterm guide"]
   };
   var SHUT = {
     ku: ["لاپەڕەکە داخراوە", "لە کاتی تاقیکردنەوەدا ئەم لاپەڕەیە دەستناکەوێت."],
     en: ["This page is closed", "It is not available during an examination."]
   };
+  /* Closed for a paper, the hosted page keeps one tab open: the Mock and
+     midterm guide, which the student may need that day and which answers no
+     question. The lesson guide and the sheet close, as on the MIS page (the
+     lecturer, 2026-11-19). */
+  var examMode = false;
+  var EXAM = {
+    ku: "لە کاتی تاقیکردنەوەدا تەنها ئەم ڕێنماییە کراوەیە.",
+    en: "During the examination only this guide is open."
+  };
 
   /* ---- which document, and whether the page is open at all ------------- */
   function docFiles(lang) {
-    /* an offline copy has neither list: its text is already in DOCS */
-    return state.doc === "study" ? (STUDY && STUDY[lang]) : (FETCH && FETCH[lang]);
+    /* an offline copy has none of the lists: its text is already in DOCS */
+    var pair = state.doc === "study" ? STUDY :
+               state.doc === "practical" ? PRACTICAL : FETCH;
+    return pair && pair[lang];
   }
 
   function setDoc(which) {
+    if (examMode) { which = "practical"; }
     state.doc = which;
     remember(STORE + ".doc", which);
     drawTabs();
@@ -917,23 +992,30 @@ bdi.nw { white-space: nowrap; }
 
   function drawTabs() {
     var n = state.lang === "en" ? 1 : 0;
-    var guide = document.getElementById("tab-guide");
-    var study = document.getElementById("tab-study");
-    guide.textContent = TABS.guide[n];
-    study.textContent = TABS.study[n];
-    guide.className = state.doc === "guide" ? "on" : "";
-    study.className = state.doc === "study" ? "on" : "";
-    /* the second tab is offered only once there is a sheet to show */
-    document.getElementById("tabsDoc").hidden = !STUDY;
+    document.querySelectorAll("#tabsDoc button").forEach(function (b) {
+      b.textContent = TABS[b.dataset.doc][n];
+      b.className = state.doc === b.dataset.doc ? "on" : "";
+    });
+    /* the tabs are offered only once there is a second document to show */
+    document.getElementById("tabsDoc").hidden = !(STUDY || PRACTICAL);
   }
 
-  /* Read on every load, so the page can be taken down from the repository
-     without republishing anything else. Resolves to whether it may be drawn. */
+  /* Read on every load, so the page can be closed for a paper from the
+     repository without republishing anything else: all but the Mock and
+     midterm guide. Resolves to whether the page may be drawn. */
   function checkOpen() {
     return fetch("closed.json", { cache: "no-store" }).then(function (r) {
       return r.ok ? r.json() : null;
     }).then(function (flag) {
       if (flag && flag.closed) {
+        if (PRACTICAL) {
+          examMode = true;
+          state.doc = "practical";
+          document.querySelectorAll("#tabsDoc button").forEach(function (b) {
+            b.hidden = b.dataset.doc !== "practical";
+          });
+          return true;
+        }
         var say = SHUT[state.lang] || SHUT.ku;
         document.querySelector(".app").innerHTML =
           '<div class="shut"><h2>' + say[0] + "</h2><p>" + say[1] + "</p></div>";
@@ -1091,6 +1173,23 @@ bdi.nw { white-space: nowrap; }
         var text = code.join("\n");
         out.push('<div class="block"><button type="button" class="copy">' + UI[state.lang].copy +
           '</button><pre><code data-copy="' + esc(text) + '">' + esc(text) + "</code></pre></div>");
+        continue;
+      }
+
+      /* the exam day's steps, from "<!-- exam-day -->" to "<!-- /exam-day -->":
+         one box in a colour of its own, which the page opens on while it is
+         closed for a paper, as on the MIS page */
+      if (/^<!--\s*exam-day\s*-->\s*$/.test(line)) {
+        flushPara();
+        i++;
+        var day = [];
+        while (i < lines.length && !/^<!--\s*\/exam-day\s*-->\s*$/.test(lines[i])) {
+          day.push(lines[i]);
+          i++;
+        }
+        i++;
+        out.push('<section class="exam-day" id="exam-day">' +
+          render(day.join("\n"), headings) + "</section>");
         continue;
       }
 
@@ -1256,6 +1355,7 @@ bdi.nw { white-space: nowrap; }
   var jump = document.getElementById("jump");
   var app = document.querySelector(".app");
   var fullBtn = document.getElementById("fullBtn");
+  var helpBtn = document.getElementById("helpBtn");
 
   function paint() {
     var key = state.doc + ":" + state.lang;
@@ -1270,7 +1370,11 @@ bdi.nw { white-space: nowrap; }
     app.setAttribute("dir", rtl ? "rtl" : "ltr");
     document.documentElement.lang = rtl ? "ckb" : "en";
 
-    if (NOTICE_KU && state.lang === "ku") {
+    if (examMode) {
+      notice.querySelector(".text").textContent = EXAM[state.lang] +
+        (NOTICE_KU && state.lang === "ku" ? "  ·  " + NOTICE_KU : "");
+      notice.hidden = false;
+    } else if (NOTICE_KU && state.lang === "ku") {
       notice.querySelector(".text").textContent = NOTICE_KU;
       notice.hidden = false;
     } else {
@@ -1294,6 +1398,15 @@ bdi.nw { white-space: nowrap; }
     AUTO_DIR = state.doc === "study";
     reader.innerHTML = render(md, headings);
     window.scrollTo(0, 0);
+    /* closed for a paper, the guide opens on the day's own steps */
+    var today = examMode && document.getElementById("exam-day");
+    if (today) {
+      today.scrollIntoView({ block: "start" });
+      /* a face still loading moves the text above it: go again once it is in */
+      if (document.fonts) {
+        document.fonts.ready.then(function () { today.scrollIntoView({ block: "start" }); });
+      }
+    }
 
     /* labels follow the reading language */
     var words = UI[state.lang];
@@ -1303,6 +1416,8 @@ bdi.nw { white-space: nowrap; }
     });
     fullBtn.title = words.full;
     fullBtn.setAttribute("aria-label", words.full);
+    helpBtn.title = words.help;
+    helpBtn.setAttribute("aria-label", words.help);
 
     /* The tab, and the header the browser prints on every sheet, both come
        from the document title — so it follows the guide and its language. */
@@ -1609,12 +1724,89 @@ bdi.nw { white-space: nowrap; }
     });
   });
 
+  /* ---- help: what the tab in front of the reader holds -------------------
+     The hosted page only: an offline copy has one document. */
+  var HELP = {
+    guide: [
+      "<p>ڕێنمایی وانەکان: هەر حەوت وانەکە، هەنگاو بە هەنگاو، بە وێنە، ئەرک و «خۆت بپشکنە».</p>" +
+      "<p>دوو تابەکەی تر:</p><ul>" +
+      "<li><b>پرسیار و وەڵام:</b> ورقەی خوێندنەوە، بۆ ناوی دوگمە و کلیلەکان، و ئەوەی " +
+      "تاقیکردنەوەکان چۆنن.</li>" +
+      "<li><b>ڕێنمایی مۆک و میدتێرم:</b> هەموو ئەوەی بۆ پەڕە کردارییەکان پێویستە.</li></ul>" +
+      "<p>لە ڕۆژی تاقیکردنەوەدا ئەم تابە داخراوە.</p>",
+      "<p>The lesson guide: all seven lessons, step by step, with pictures, tasks and Check " +
+      "yourself.</p><p>The other two tabs:</p><ul>" +
+      "<li><b>Questions and Answers:</b> the revision sheet, for the names of the buttons and " +
+      "keys, and what the papers are like.</li>" +
+      "<li><b>Mock and midterm guide:</b> all you need for the hands-on papers.</li></ul>" +
+      "<p>On an exam day this tab is closed.</p>"
+    ],
+    study: [
+      "<p>ورقەی خوێندنەوە: پرسیار و وەڵامی هەر وانەیەک، پاشان «تاقیکردنەوەکان — چی چاوەڕێت " +
+      "دەکات» و «پرسیارە قورسەکان — چۆن ئامادە دەبیت». بۆ چوونە سەر هەر بەشێک، ناوەڕۆکەکە " +
+      "بەکاربهێنە.</p><p>لە ڕۆژی تاقیکردنەوەدا ئەم تابە داخراوە.</p>",
+      "<p>The revision sheet: each lesson's questions and answers, then «The papers — what to " +
+      "expect» and «The harder questions — how to prepare». Use the contents to jump to a " +
+      "part.</p><p>On an exam day this tab is closed.</p>"
+    ],
+    practical: [
+      "<p>هەموو ئەوەی بۆ پەڕە کردارییەکان پێویستە: مۆک، کویز، میدتێرم و فاینەل.</p><ul>" +
+      "<li><b>پێداویستییەکان:</b> ئەوەی دەبێت لەگەڵ خۆت بیهێنیت.</li>" +
+      "<li><b>فایلەکە چۆن دەگات:</b> ئیمەیلی مامۆستا.</li>" +
+      "<li><b>لە ڕۆژی تاقیکردنەوەدا:</b> هەنگاوەکانی ئەو ڕۆژە و یاساکانی ژوور.</li>" +
+      "<li><b>ئەگەر کێشەیەک هات:</b> هەڵە باوەکان و چارەسەریان.</li>" +
+      "<li><b>کارە بنەڕەتییەکان و شێوازەکان:</b> چۆن هەر پرسیارێکی کرداری دەکەیت.</li>" +
+      "<li><b>ڕاپۆرت:</b> ئەوەی ڕاپۆرتێکی ڕێکخراو پێویستی پێیەتی.</li></ul>" +
+      "<p>ئەم تابە لە ڕۆژی تاقیکردنەوەدا کراوە دەمێنێت.</p>",
+      "<p>All you need for the hands-on papers: the mocks, the quizzes, the midterm and the " +
+      "final.</p><ul>" +
+      "<li><b>What you need:</b> what to bring.</li>" +
+      "<li><b>How the file reaches you:</b> the teacher's e-mail.</li>" +
+      "<li><b>On the exam day:</b> the steps of that day and the room's rules.</li>" +
+      "<li><b>If something goes wrong:</b> the usual problems and their fixes.</li>" +
+      "<li><b>The basics and the ways:</b> how each hands-on question is done.</li>" +
+      "<li><b>The report:</b> what a well-ordered report needs.</li></ul>" +
+      "<p>This tab stays open on an exam day.</p>"
+    ]
+  };
+  var helpBox = document.getElementById("help");
+  helpBtn.hidden = !(STUDY && PRACTICAL);
+
+  helpBtn.addEventListener("click", function () {
+    var n = state.lang === "en" ? 1 : 0;
+    var close = helpBox.querySelector(".help-close");
+    helpBox.setAttribute("dir", n ? "ltr" : "rtl");
+    helpBox.setAttribute("lang", n ? "en" : "ckb");
+    helpBox.querySelector(".help-body").innerHTML =
+      "<h2>" + TABS[state.doc][n] + "</h2>" + HELP[state.doc][n];
+    close.title = UI[n ? "en" : "ku"].close;
+    close.setAttribute("aria-label", close.title);
+    helpBox.showModal();
+  });
+  helpBox.querySelector(".help-close").addEventListener("click", function () {
+    helpBox.close();
+  });
+  helpBox.addEventListener("click", function (e) {
+    if (e.target === helpBox) { helpBox.close(); }
+  });
+
   /* ---- start ------------------------------------------------------------- */
   var savedTheme = recall("guide.theme");
   if (savedTheme) { document.documentElement.setAttribute("data-theme", savedTheme); }
   var savedLang = recall(STORE + ".lang");
   if (savedLang === "ku" || savedLang === "en") { state.lang = savedLang; }
-  if (STUDY && recall(STORE + ".doc") === "study") { state.doc = "study"; }
+  /* the Mock and midterm guide is a tab of the hosted page only */
+  document.getElementById("tab-practical").hidden = !PRACTICAL;
+  var savedDoc = recall(STORE + ".doc");
+  if ((savedDoc === "study" && STUDY) || (savedDoc === "practical" && PRACTICAL)) {
+    state.doc = savedDoc;
+  }
+  /* a link can open a tab of its own, ahead of the one last read:
+     …/?tab=practical, ?tab=study or ?tab=guide */
+  var asked = (location.search.match(/[?&]tab=(\w+)/) || [])[1];
+  if (asked === "guide" || (asked === "study" && STUDY) || (asked === "practical" && PRACTICAL)) {
+    state.doc = asked;
+  }
 
   drawTabs();
   if (FETCH) {
