@@ -669,8 +669,9 @@ makes a folder with the file's name, so nothing spills loose into **Downloads**.
 >
 > - WinRAR is not free: you may try it for 40 days at no charge, and its terms say a licence must
 >   be bought after that. It then shows a reminder window.
-> - Windows 11 opens a rar file by itself, with the same **Extract All** as in lesson 3. You do not
->   need WinRAR to open one; you need it to make a rar file, or to open one with a password.
+> - Windows 11 opens a rar file by itself too, with the same **Extract All** as in lesson 3. But in
+>   this course you use **WinRAR** → **Extract to** from now on, and the midterm asks it that way. To
+>   make a rar file, or to open one with a password, you need WinRAR.
 
 ## 5. Your laptop's specifications
 
@@ -735,7 +736,8 @@ https://youtu.be/Lf5kimIJSQw
 1. Add Kurdish, and type your name in Kurdish in Notepad.
 2. Find your laptop's specifications and compare them with the laptop table of lesson 1.
 3. Take a screenshot of the About page and send it to the teacher by the university Gmail.
-4. Install WinRAR from its official website, and open the rar file the teacher sent you.
+4. Install WinRAR on **your own laptop** from its official website, and open the rar file the
+   teacher sent you with **Extract to**. The midterm is on your own laptop and needs it.
 
 > **Midterm:** on a separate day after this lesson, 60 minutes, on lessons 1 to 4: online, on your laptop, in English. It is worth 24 marks.
 
@@ -745,7 +747,7 @@ https://youtu.be/Lf5kimIJSQw
 - [ ] I can set the sound and the brightness
 - [ ] I can put the clock and the date right
 - [ ] I can install a program and remove it
-- [ ] I can install WinRAR from its official website and open a rar file
+- [ ] I can install WinRAR on my own laptop and open a rar file with Extract to
 - [ ] I can install a Kurdish font and use it in Word
 - [ ] I can find my laptop's specifications
 - [ ] I can take a screenshot with [[Win+Shift+S]]

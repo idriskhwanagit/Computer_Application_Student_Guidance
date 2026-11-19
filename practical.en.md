@@ -13,8 +13,10 @@
 | Final | 20 | 40 | Word and PowerPoint |
 
 > ⚠️ **Every question comes in one of the ways below.** The answer is only in the file, and only
-> shows once you do the task. Each group and each version has a file of its own: the same tasks,
-> with other answers. So a friend's answer from another group or another version is no help to you.
+> shows once you do the task. In the marked papers each group and each version has a file of its own,
+> and so does a quiz's make-up: the same tasks, with other answers. So a friend's answer from another
+> group or another version is no help to you. Only the two mocks are one file for everyone, since they
+> are not marked.
 
 > 💻 **On a laptop only** — they cannot be done on a phone.
 
@@ -25,8 +27,8 @@
 
 - **The laptop and its charger.** If your battery runs down fast, bring a power strip and sit near a
   socket.
-- **The programs:** Chrome and WinRAR from lesson 4. For the quizzes and the final, Word and
-  PowerPoint too.
+- **The programs:** Chrome, and for the midterm WinRAR from lesson 4, **on your own laptop**. For
+  the quizzes and the final, Word and PowerPoint too.
 - **The university account:** Chrome on your laptop must be signed in with your university e-mail,
   since the form takes university accounts only. If Google shows another account, use **Switch
   account**.
@@ -38,7 +40,7 @@
 - **In the teacher's e-mail:** at the start of the paper the teacher sends an e-mail to your
   university Gmail, with the form's link and the file.
 - **Before the exam day:** make sure you can sign in to the university Gmail on your laptop, and that
-  WinRAR is installed.
+  WinRAR is installed on your laptop, not only on a lab computer.
 
 <!-- exam-day -->
 ## On the exam day
@@ -60,8 +62,10 @@ download the attached file.
 - No phone with you: turn its Hotspot on and put it in your bag.
 - On the taskbar only the Chrome and File Explorer icons, and in the quizzes and the final Word and
   PowerPoint too: close every other program, and take other pinned icons off with a right-click and
-  **Unpin from taskbar**.
+  **Unpin from taskbar**. A window a task itself opens is allowed, such as Notepad when you open a
+  text file.
 - In Chrome only these three tabs open: the form, the university Gmail, and the Mock and midterm guide.
+  The pages a task opens are allowed too: page.html, and the downloads page that [[Ctrl+J]] opens.
 
 ⚠️ **If your laptop dies and your answers do not arrive, you get zero.**
 
