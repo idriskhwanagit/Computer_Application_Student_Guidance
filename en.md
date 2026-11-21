@@ -662,6 +662,10 @@ https://www.win-rar.com/download.html
   puts the files in it.
 - **Show more options** ((3)): if **WinRAR** is not in the menu, you find it here.
 
+**Making a zip file:** right-click the folder → **WinRAR** → **Add to archive…**. In the window, under
+**Archive format**, choose **ZIP**, and make sure the name at the top ends in **.zip** → **OK**. The
+file is made beside the folder. With **RAR** chosen, it makes a rar file.
+
 **From now on:** open every zip or rar file with **WinRAR** → **Extract to**, not **Extract Here**. It
 makes a folder with the file's name, so nothing spills loose into **Downloads**.
 
@@ -739,20 +743,26 @@ https://youtu.be/Lf5kimIJSQw
 
 ## Lesson 4 task
 
-1. Add Kurdish, and type your name in Kurdish in Notepad.
-2. Find your laptop's specifications and compare them with the laptop table of lesson 1: the
-   processor, the RAM, and SSD or HDD.
-3. Take a screenshot of the About page.
+In **Documents**, make a folder named **Lesson4**. All of this task goes into it, and at the end you
+make it **Lesson4.zip**. Write the names of the folder and the files as they are, in English.
+
+1. Add Kurdish. Type your name in Kurdish in Notepad, and save it in Lesson4 as **name.txt**.
+2. In About, click **Copy**, press [[Ctrl+V]] in a new Notepad, and save it in Lesson4 as
+   **specs.txt**. Then compare it with the laptop table of lesson 1: the processor, the RAM, and SSD
+   or HDD.
+3. Take two screenshots: the About page, and Task Manager → **Performance** → **Disk 0**. Copy them
+   from **Pictures** → **Screenshots** into Lesson4, and rename them **about.png** and **disk.png**.
 4. Install WinRAR on **your own laptop** from its official website, and open the rar file the
    teacher sent you with **Extract to**. The midterm is on your own laptop and needs it.
-5. Send the homework in the **lesson 4 homework form**, whose link the teacher sends to your
-   university Gmail: your name in Kurdish, the specifications with the **Copy** button, your
-   storage type, your comparison, and the screenshot with **Add file**. The top of the form says
-   when it closes.
+5. Make the Lesson4 folder **Lesson4.zip** with WinRAR, as in part 4: **Add to archive…** → **ZIP**.
+   Then send it in the **lesson 4 homework form**, whose link the teacher sends to your university
+   Gmail: your storage type, your comparison, and Lesson4.zip with **Add file**. The top of the form
+   says when it closes.
 
-> **It is marked automatically:** the Kurdish name 3, the About screenshot 3 and the comparison 4.
-> The comparison is checked against your own laptop's specifications, so a friend's ticks are no
-> help to you.
+> **It is marked automatically:** Lesson4.zip and its Lesson4 folder 2, the Kurdish name in
+> name.txt 2, specs.txt 1, the two screenshots 2, and the comparison 3. A rar file has no automatic
+> mark, so choose ZIP. The comparison is checked against your own specs.txt, and if two students
+> send the same laptop or the same picture, the teacher sees it.
 
 > **Midterm:** on a separate day after this lesson, 60 minutes, on lessons 1 to 4: online, on your laptop, in English. It is worth 24 marks.
 
@@ -764,6 +774,7 @@ https://youtu.be/Lf5kimIJSQw
 - [ ] I can put the clock and the date right
 - [ ] I can install a program and remove it
 - [ ] I can install WinRAR on my own laptop and open a rar file with Extract to
+- [ ] I can make a folder a zip file with WinRAR → Add to archive
 - [ ] I can install a Kurdish font and use it in Word
 - [ ] I can find my laptop's specifications
 - [ ] I can take a screenshot with [[Win+Shift+S]]
