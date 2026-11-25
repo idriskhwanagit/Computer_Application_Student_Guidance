@@ -31,6 +31,8 @@
   --warn-wash:  #fbf1e3;
   --good:       #1d7a4c;
   --good-wash:  #e3f4ea;
+  --task:       #5b3fa8;   /* a lesson's homework, in a box of its own */
+  --task-wash:  #f1ecfb;
   --mark:       #e5322d;   /* the numbers on the screenshots */
   --code-bg:    #12303a;
   --code-ink:   #dbe9ee;
@@ -62,6 +64,8 @@
     --warn-wash:  #2c2317;
     --good:       #6fd3a0;
     --good-wash:  #13291e;
+    --task:       #b9a3f0;
+    --task-wash:  #221c33;
     --code-bg:    #0a1a20;
     --code-ink:   #cfe2e8;
     --shadow:     0 1px 2px rgba(0, 0, 0, .4), 0 8px 24px -16px rgba(0, 0, 0, .8);
@@ -84,6 +88,8 @@
   --warn-wash:  #2c2317;
   --good:       #6fd3a0;
   --good-wash:  #13291e;
+  --task:       #b9a3f0;
+  --task-wash:  #221c33;
   --code-bg:    #0a1a20;
   --code-ink:   #cfe2e8;
   --shadow:     0 1px 2px rgba(0, 0, 0, .4), 0 8px 24px -16px rgba(0, 0, 0, .8);
@@ -640,6 +646,22 @@ bdi.nw { white-space: nowrap; }
 /* a phone's top bar is two or three rows high: the box's heading clears it */
 @media (max-width: 600px) { .reader .exam-day { scroll-margin-top: 10rem; } }
 
+/* each lesson's homework, "## ئەرکی وانەی N" or "## Lesson N task", in a
+   colour of its own - see task in render() - so it is never read as part
+   of the lesson */
+.reader .task-box {
+  margin: 2rem 0;
+  padding: .3rem 1.2rem 1rem;
+  border: 1px solid color-mix(in srgb, var(--task) 40%, transparent);
+  border-inline-start: 4px solid var(--task);
+  border-radius: 10px;
+  background: var(--task-wash);
+}
+.reader .task-box h2 { margin-top: 1rem; color: var(--task); }
+.reader .task-box h2::before { content: "📌 "; }
+.reader .task-box blockquote { background: var(--surface); }
+.reader .task-box > :last-child { margin-bottom: 0; }
+
 /* --- a list to tick off -------------------------------------------------- */
 .reader ul.checks { padding-inline-start: 0; list-style: none; }
 .reader ul.checks li { margin-bottom: .35rem; }
@@ -1139,6 +1161,7 @@ bdi.nw { white-space: nowrap; }
      word must still read from the right. */
   var AUTO_DIR = false;
   function autoDir() { return AUTO_DIR ? ' dir="auto"' : ""; }
+  var inTask = false;   // inside a lesson's homework box: see render()
 
   function render(md, headings) {
     var lines = md.replace(/\r\n/g, "\n").split("\n");
@@ -1232,6 +1255,23 @@ bdi.nw { white-space: nowrap; }
           t += "</tr>";
         });
         out.push(t + "</tbody></table></div>");
+        continue;
+      }
+
+      /* a lesson's homework, down to the next heading of its rank or higher,
+         in a box of its own colour; inTask keeps the box from opening twice */
+      if (!inTask && /^##\s+(ئەرکی وانەی\s*\d+|Lesson\s+\d+\s+task)\s*$/.test(line)) {
+        flushPara();
+        var task = [line], fenced = false;
+        i++;
+        while (i < lines.length && (fenced || !/^#{1,2}\s/.test(lines[i]))) {
+          if (/^```/.test(lines[i])) { fenced = !fenced; }
+          task.push(lines[i]);
+          i++;
+        }
+        inTask = true;
+        out.push('<section class="task-box">' + render(task.join("\n"), headings) + "</section>");
+        inTask = false;
         continue;
       }
 

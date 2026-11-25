@@ -757,7 +757,8 @@ make it **Lesson4.zip**. Write the names of the folder and the files as they are
 5. Make the Lesson4 folder **Lesson4.zip** with WinRAR, as in part 4: **Add to archive…** → **ZIP**.
    Then send it in the **lesson 4 homework form**, whose link the teacher sends to your university
    Gmail: your storage type, your comparison, and Lesson4.zip with **Add file**. The top of the form
-   says when it closes.
+   says when it closes. Sign in with your university account and press **Submit** at the end. Until
+   it closes, you can change your answers and your file.
 
 > **It is marked automatically:** Lesson4.zip and its Lesson4 folder 2, the Kurdish name in
 > name.txt 2, specs.txt 1, the two screenshots 2, and the comparison 3. A rar file has no automatic
