@@ -563,14 +563,10 @@ for example the picture from the lesson 2 task.
 
 To open **Settings**: press [[Win+I]], or Start → Settings.
 
-## 1. Adding Kurdish
+## 1. Kurdish
 
-1. [[Win+I]] → **Time & language** → **Language & region**.
-2. Click **Add a language** ((1)).
-3. Type Kurdish and choose **Central Kurdish** → **Next** → **Install**.
-4. The new language joins the list of languages ((2)).
-
-![Language and region](img/screens-lesson4-language.webp)
+You install the **C4kurd** Kurdish keyboard in part 8, with the Kurdish fonts: they come in a **rar**
+file, which needs WinRAR from part 4. Once it is installed, this is how you switch the keyboard.
 
 ### Switching the keyboard language
 
@@ -716,26 +712,44 @@ Copy, cut and paste were in lesson 2: [[Ctrl+C]], [[Ctrl+X]] and [[Ctrl+V]].
 3. The picture is copied. You can paste it into Word or Gmail with [[Ctrl+V]].
 4. It is also saved in the **Pictures** → **Screenshots** folder.
 
-## 8. A Kurdish font for Word
+## 8. The Kurdish keyboard and fonts
 
-Windows has the Kurdish letters, but not every Kurdish font. The **Unikurd** fonts write Kurdish
-and Arabic in one font, which is what a report in Word needs.
+Windows has the Kurdish letters, but not every Kurdish font. The file **Fonts.rar** holds two
+things: the **C4kurd** Kurdish keyboard, and 40 **Unikurd** fonts, which write Kurdish and Arabic in
+one font, which is what a report in Word needs.
 
-### Installing a font
+### Downloading the file
 
-1. Download the font. This video shows where it is and how to find it:
+The teacher's video shows every step:
 
 ```
 https://youtu.be/Lf5kimIJSQw
 ```
 
-2. If the file is a **zip**, right-click it → **WinRAR** → **Extract to**, as in part 4.
-3. Open the folder. A font file ends in **.ttf** or **.otf**.
-4. Right-click the font file → **Install**. It takes a few seconds.
-5. For everybody who uses this computer: right-click → **Install for all users**.
-6. Open Word. The new font is there in the list of fonts.
+1. Download **Fonts.rar** from here:
 
-> If Word was already open, close it and open it again, or the new font will not be there.
+```
+https://drive.google.com/file/d/14mEF2fS-hfvWsQyrwcSdoQOjWBwygtn9/view
+```
+
+2. Right-click **Fonts.rar** → **WinRAR** → **Extract to**, as in part 4. A **Fonts** folder
+   appears, with two folders in it: **c4kud** and **40 Unikurd Fonts**.
+
+### Installing the Kurdish keyboard
+
+1. Open the **c4kud** folder and double-click **setup.exe**. Wait until it finishes.
+2. [[Win+Space]] switches the keyboard between Kurdish and English, as in part 1.
+
+> If Windows shows **Windows protected your PC**: **More info** → **Run anyway**.
+
+### Installing the fonts
+
+1. Open the **40 Unikurd Fonts** folder and select all 40 fonts with [[Ctrl+A]].
+2. Right-click → **Install for all users**. If it is not in the menu, it is under **Show more
+   options**. It takes a few seconds.
+3. Open Word. The new fonts are there in the list of fonts.
+
+> If Word was already open, close it and open it again, or the new fonts will not be there.
 
 ### Removing a font
 
@@ -746,7 +760,8 @@ https://youtu.be/Lf5kimIJSQw
 In **Documents**, make a folder named **Lesson4**. All of this task goes into it, and at the end you
 make it **Lesson4.zip**. Write the names of the folder and the files as they are, in English.
 
-1. Add Kurdish. Type your name in Kurdish in Notepad, and save it in Lesson4 as **name.txt**.
+1. Install the Kurdish keyboard, as in part 8. Type your name in Kurdish in Notepad, and save it in
+   Lesson4 as **name.txt**.
 2. In About, click **Copy**, press [[Ctrl+V]] in a new Notepad, and save it in Lesson4 as
    **specs.txt**. Then compare it with the laptop table of lesson 1: the processor, the RAM, and SSD
    or HDD.
@@ -769,7 +784,7 @@ make it **Lesson4.zip**. Write the names of the folder and the files as they are
 
 ## Check yourself — lesson 4
 
-- [ ] I can add Kurdish and switch the language with [[Win+Space]]
+- [ ] I can install the Kurdish keyboard and switch the language with [[Win+Space]]
 - [ ] I can tell in Task Manager whether my storage is an SSD or an HDD
 - [ ] I can set the sound and the brightness
 - [ ] I can put the clock and the date right

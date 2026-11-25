@@ -377,21 +377,21 @@
 > 
 > Or Start, then Settings.
 
-**2.** In which part of Settings is Kurdish added?
+**2.** To install the C4kurd Kurdish keyboard, which file do you run?
 
 > **Answer:**
 > 
-> Time & language
+> setup.exe
 > 
-> Language & region, then Add a language.
+> setup.exe is in the c4kud folder, once Fonts.rar is opened with Extract to.
 
-**3.** Which language do you choose to type Sorani Kurdish?
+**3.** To install a font for everyone who uses the computer, what do you choose when you right-click it?
 
 > **Answer:**
 > 
-> Central Kurdish
+> Install for all users
 > 
-> Central Kurdish = Sorani.
+> Install puts it in for you alone.
 
 **4.** Switching the keyboard language?
 
