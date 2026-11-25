@@ -428,6 +428,18 @@ body {
 .reader ul, .reader ol { margin: 0 0 1rem; padding-inline-start: 1.5rem; }
 .reader li { margin-bottom: .4rem; }
 .reader a { color: var(--accent-ink); text-underline-offset: .18em; }
+/* a file the guide hands out, such as lesson 4's Fonts.rar: a button */
+.reader a[href$=".rar"], .reader a[href$=".zip"] {
+  display: inline-block;
+  margin: .2rem 0;
+  padding: .3rem .9rem;
+  border-radius: 8px;
+  background: var(--accent);
+  color: var(--surface);
+  font-weight: 700;
+  text-decoration: none;
+}
+.reader a[href$=".rar"]:hover, .reader a[href$=".zip"]:hover { background: var(--accent-ink); }
 
 .reader hr { margin: 2.5rem 0; border: 0; border-top: 1px solid var(--rule); }
 

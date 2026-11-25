@@ -714,41 +714,28 @@ Copy, cut and paste were in lesson 2: [[Ctrl+C]], [[Ctrl+X]] and [[Ctrl+V]].
 
 ## 8. The Kurdish keyboard and fonts
 
-Windows has the Kurdish letters, but not every Kurdish font. The file **Fonts.rar** holds two
-things: the **C4kurd** Kurdish keyboard, and 40 **Unikurd** fonts, which write Kurdish and Arabic in
-one font, which is what a report in Word needs.
+Windows has the Kurdish letters, but not every Kurdish font. The file **Fonts.rar** holds the
+**C4kurd** Kurdish keyboard and 40 **Unikurd** fonts. These fonts write Kurdish and Arabic in one
+font, which is what a report in Word needs.
 
-### Downloading the file
-
-The teacher's video shows every step:
+1. Open the teacher's video and watch it to the end:
 
 ```
 https://youtu.be/Lf5kimIJSQw
 ```
 
-1. Download **Fonts.rar** from here:
-
-```
-https://drive.google.com/file/d/14mEF2fS-hfvWsQyrwcSdoQOjWBwygtn9/view
-```
-
-2. Right-click **Fonts.rar** → **WinRAR** → **Extract to**, as in part 4. A **Fonts** folder
+2. Download **Fonts.rar** from the site: [⬇ Download Fonts.rar](https://idriskhwanagit.github.io/Computer_Application_Student_Guidance/Fonts.rar)
+3. Right-click **Fonts.rar** → **WinRAR** → **Extract to**, as in part 4. A **Fonts** folder
    appears, with two folders in it: **c4kud** and **40 Unikurd Fonts**.
-
-### Installing the Kurdish keyboard
-
-1. Open the **c4kud** folder and double-click **setup.exe**. Wait until it finishes.
-2. [[Win+Space]] switches the keyboard between Kurdish and English, as in part 1.
+4. **The Kurdish keyboard:** open the **c4kud** folder and double-click **setup.exe**. Once it
+   finishes, [[Win+Space]] switches between Kurdish and English.
+5. **The fonts:** open the **40 Unikurd Fonts** folder, select all 40 fonts with [[Ctrl+A]], and
+   right-click → **Install for all users**.
 
 > If Windows shows **Windows protected your PC**: **More info** → **Run anyway**.
-
-### Installing the fonts
-
-1. Open the **40 Unikurd Fonts** folder and select all 40 fonts with [[Ctrl+A]].
-2. Right-click → **Install for all users**. If it is not in the menu, it is under **Show more
-   options**. It takes a few seconds.
-3. Open Word. The new fonts are there in the list of fonts.
-
+>
+> If **Install for all users** is not in the menu, it is under **Show more options**.
+>
 > If Word was already open, close it and open it again, or the new fonts will not be there.
 
 ### Removing a font
